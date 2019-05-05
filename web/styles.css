@@ -2,8 +2,8 @@
     position: relative;
     text-align: center;
     color: white;
-    /* background-image: url(leah.jpg); */
-    height: 100%;
+    background-image: url(leah.jpg);
+    height: 600px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -11,9 +11,32 @@
 }
 
 .greeting {
-    font-size: 4.5em;
+    font-size: 5em;
     position: absolute;
     left: 55%;
-    top: 30%;
+    top: 25%;
     width: auto;
+}
+
+.nav {
+    background-color: teal;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    text-decoration: none;
+}
+
+.nav-list {
+    display: flex;
+    margin: 0;
+}
+
+.nav-item {
+    margin: 5px 30px 5px 0;
+
 }
