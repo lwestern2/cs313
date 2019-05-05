@@ -13,6 +13,7 @@
   
 <div class="header">
     <h2 class="greeting">- Leah Western -</h2>
+    <div class="arrow bounce"></div>
 </div>
 
 <?php
