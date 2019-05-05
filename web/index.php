@@ -23,6 +23,8 @@ include("nav.php");
   <div>
     <main>
       <h2>Welcome!</h2>
+      <hr>
+      <p>Thank you for visiting my site</p>
     </main>
 
     <footer id="site-footer">
