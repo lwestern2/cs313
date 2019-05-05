@@ -3,9 +3,8 @@ $file = pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME);
 ?>
 
 <div class="header">
-    <img src="https://www.facebook.com/photo.php?fbid=1424284017614622&set=pb.100000991112428.-2207520000.1557018463.&type=3&theater" 
-    alt="Profile pictures" id="profile">
-    <h2>Leah Western's Home Page</h2>
+    <h2>- Leah Western -</h2>
+    <img id="bg-image" src="C:\Users\leahb\Google Drive\Leah's Pictures\2015\Senior Year (Everything)\Senior Photos\Final Photos" alt="Leah Western">
 </div>
 
 <nav class="nav">

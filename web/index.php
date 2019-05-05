@@ -19,12 +19,11 @@ include("header.php");
 <body>
   <div>
     <main>
-      <h2>Welcome to Dogs are Cute.Inc!</h2>
-      <img src="dog.jpg" alt="cute dog picture">
+      <h2>Welcome!</h2>
     </main>
 
     <footer id="site-footer">
-      <p>&copy;2019 Dogs are Cute.Inc, All rights reserved</p>
+      <p>&copy;2019 Leah Western, All rights reserved</p>
     </footer>
   </div>
 </body>
