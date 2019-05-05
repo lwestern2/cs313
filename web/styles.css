@@ -27,7 +27,11 @@ ul {
     list-style: none;
 }
 
-li {
+/* li {
+    text-decoration: none;
+} */
+
+a {
     text-decoration: none;
 }
 
@@ -38,5 +42,4 @@ li {
 
 .nav-item {
     margin: 5px 30px 5px 0;
-
 }
