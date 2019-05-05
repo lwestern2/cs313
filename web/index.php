@@ -16,6 +16,10 @@ include("header.php");
 ?>
 </nav>
 
+<div class="header">
+    <h2 class="greeting">- Leah Western -</h2>
+</div>
+
 <body>
   <div>
     <main>
