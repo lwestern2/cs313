@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title id="page-title">Home | Leah Western</title>
+    <title id="page-title">Assignments | Leah Western</title>
     <meta name="description" content="Leah Western Home page">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
@@ -18,7 +18,7 @@ include("header.php");
 
 <body>
     <main>
-        <h3>Assignments are like poop. They stink and you usually don't notice them coming until you step in it.</h3>
+        <p>Assignments are like poop. They stink and you usually don't notice them coming until you step in it.</p>
         <ul>
             <li><a href="/week2/home.php">Week 2</a></li>
         </ul>
