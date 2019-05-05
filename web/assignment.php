@@ -20,7 +20,7 @@ include("nav.php");
     <main>
         <p>Assignments are like poop. They stink and you usually don't notice them coming until you step in it.</p>
         <ul>
-            <li><a href="/week2/home.php">Week 2</a></li>
+            <li class="a-item"><a href="/week2/home.php">Week 2</a></li>
         </ul>
     </main>
 </body>
