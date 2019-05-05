@@ -12,7 +12,7 @@
 </head>
 <nav>
   <?php
-include("header.php");
+include("nav.php");
 ?>
 </nav>
 
