@@ -35,6 +35,7 @@ a {
 
 a:hover {
     color: white;
+    text-decoration: none;
 }
 
 .nav-list {
@@ -46,10 +47,12 @@ a:hover {
     margin: 5px 20px 5px 0;
     color: white;
     padding: 6px;
+    text-decoration: none;
 }
 
 .nav-item:hover {
     background-color: #00a1a1;
+    text-decoration: none;
 }
 
 main > h2 {
@@ -66,8 +69,10 @@ p {
     padding: 7px;
     border-radius: 15px;
     width: 6vw;
+    text-decoration: none;
 }
 
 .a-item:hover {
     background-color: #00a1a1;
+    text-decoration: none;
 }
