@@ -19,7 +19,8 @@
 
         <main>
             <h2>Welcome to Dogs are Cute.Inc!</h2>
-            <img src="dog.jpg" alt="cute dog picture">
+            <img src="dog.jpg" alt="cute dog picture" id="dog">
+            <img src="dog1.jpeg" alt="cute dog picture" id="dog1">
         </main>
 
         <footer id="site-footer">

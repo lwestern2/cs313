@@ -1,7 +1,46 @@
 #logo {
-    max-width: 20px;
+    width: 100px;
+    height: 80px;
 }
 
 .header {
     display: flex;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    margin: 0px;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 2vw;
+}
+
+.navbar {
+    background-color: #ff6026;
+}
+
+a {
+    color: white;
+    padding: .5vw;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #ff6f3b;
+}
+
+h2 {
+    text-align: center;
+    padding: 5px;
+    margin: 0; 
+}
+
+#dog {
+    width: 50vw;
 }
