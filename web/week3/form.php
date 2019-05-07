@@ -44,11 +44,14 @@
             if (!empty($c)) {
                 return ($a[$c]);
             }
+
+            
         }
 
         $c=$_POST["continent"];
         $a=array("NA"=>"North America", "SA"=>"South America", "EU"=>"Europe", "AS"=>"Asia", "AU"=>"Australia", "AF"=>"Africa", "AN"=>"Antarctica");
 
+        echo $c;
         echo (array_map("arrayMap",$c));
     }
     ?>
