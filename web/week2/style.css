@@ -37,7 +37,11 @@ a {
 a:hover {
     color: white;
     text-decoration: none;
-    background-color: #ff6f3b;
+    background-color: #ff7f51;
+}
+
+.nav-list.active {
+    background-color: #ff5719;
 }
 
 .welcome {
