@@ -25,7 +25,7 @@
         }
         else {
             $email = ($_POST["email"]);
-            $emailLink = 'Email: <a href="mailto:' + $email + '">' + $email + '</a><br>';
+            $emailLink = 'Email: <a href="mailto:' . $email . '">' . $email . '</a><br>';
             echo "$emailLink";
         }
 
