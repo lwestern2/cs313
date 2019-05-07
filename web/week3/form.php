@@ -37,10 +37,11 @@
             $major = ($_POST["major"]);
             echo "Major: $major <br>";
         }
-       
+
+        echo "Continents Visited: <br>";
         $a=array("NA"=>"North America", "SA"=>"South America", "EU"=>"Europe", "AS"=>"Asia", "AU"=>"Australia", "AF"=>"Africa", "AN"=>"Antarctica");
         foreach($_POST['continent'] as $value) {
-            echo "Continents visited:" . $a[$value] . "<br>";
+            echo $a[$value] . "<br>";
         }
 
         $comments = ($_POST["comments"]);
