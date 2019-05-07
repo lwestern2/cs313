@@ -29,9 +29,6 @@
  
  ?>
 
- <label for="name">Comments:</label><br>
- <textarea name="comments" id="comments" cols="30" rows="5"></textarea><br>
-
 <input type="checkbox" name="continent[]" value="NA"> North America <br>
 <input type="checkbox" name="continent[]" value="SA"> South America <br>
 <input type="checkbox" name="continent[]" value="EU"> Europe <br>
@@ -40,6 +37,9 @@
 <input type="checkbox" name="continent[]" value="AF"> Africa <br>
 <input type="checkbox" name="continent[]" value="AN"> Antarctica <br>
 
+<label for="name">Comments:</label><br>
+ <textarea name="comments" id="comments" cols="30" rows="5"></textarea><br>
+ 
 <input type="submit"> 
 </form>
 </body>
