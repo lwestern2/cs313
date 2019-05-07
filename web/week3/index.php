@@ -27,5 +27,7 @@
 
  <label for="name">Comments:</label><br>
  <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+
+ <input type="submit"> 
 </form>
 </body>
