@@ -7,8 +7,8 @@ $file = pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME);
     <h1>Dogs are Cute.Inc</h1>
 </div>
 
-<nav class="">
-    <ul class="">
+<nav class="navbar nav navbar-default">
+    <ul class="list">
         <li class="nav-list <?php if ($file === 'home') echo 'active' ?>"><a href="home.php" title="Home">Home</a></li>
         <li class="nav-list <?php if ($file === 'about') echo 'active' ?>"><a href="about.php" title="About Us">About
                 Us</a></li>
