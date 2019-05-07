@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +25,8 @@
         }
         else {
             $email = ($_POST["email"]);
-            echo 'Email: <a href="mailto:' + $email + '">' + $email + '</a><br>';
+            $emailLink = 'Email: <a href="mailto:' + $email + '">' + $email + '</a><br>';
+            echo $emailLink;
         }
 
         if (empty($_POST["major"])) {
