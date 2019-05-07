@@ -7,6 +7,8 @@
     <meta name="description" content="Dogs are Cute.Inc Home Page">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 <body>
@@ -16,7 +18,7 @@
             ?>
 
         <main>
-        <h2>Welcome to Dogs are Cute.Inc!</h2>
+        <h2 class="welcome">Welcome to Dogs are Cute.Inc!</h2>
             <div class="images">
                 <img src="dog.jpg" alt="cute dog picture" id="dog">
                 <img src="dog1.jpeg" alt="cute dog picture" id="dog1">

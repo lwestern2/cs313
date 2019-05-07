@@ -21,17 +21,17 @@ body {
 
 .nav-list {
     display: flex;
-    margin-right: 2vw;
 }
 
 .navbar {
     background-color: #ff6026;
+    padding: 0 !important;
 }
 
 a {
-    color: white;
-    text-decoration: none;
-    padding: .5vw;
+    color: white !important;
+    text-decoration: none !important;
+    padding: 1vw;
 }
 
 a:hover {
@@ -40,7 +40,7 @@ a:hover {
     background-color: #ff6f3b;
 }
 
-h2 {
+.welcome {
     padding: 20px;
     margin: 0; 
     font-size: 3em;
