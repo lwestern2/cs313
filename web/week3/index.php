@@ -26,7 +26,7 @@
  <input type="radio" name="major" value="computerEngineering">Computer Engineering <br>
 
  <label for="name">Comments:</label><br>
- <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+ <textarea name="comments" id="comments" cols="30" rows="10"></textarea><br>
 
  <input type="submit"> 
 </form>
