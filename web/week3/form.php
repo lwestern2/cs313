@@ -40,13 +40,13 @@
         $comments = ($_POST["comments"]);
         echo "Comments: $comments <br>";
         
-        echo $_POST["continent"];
-        echo $_POST["continent1"];
-        echo $_POST["continent2"];
-        echo $_POST["continent3"];
-        echo $_POST["continent4"];
-        echo $_POST["continent5"];
-        echo $_POST["continent6"];
+        echo $_POST["continent"] . "<br>";
+        echo $_POST["continent1"] . "<br>";
+        echo $_POST["continent2"] . "<br>";
+        echo $_POST["continent3"] . "<br>";
+        echo $_POST["continent4"] . "<br>";
+        echo $_POST["continent5"] . "<br>";
+        echo $_POST["continent6"] . "<br>";
     }
     ?>
 </body>
