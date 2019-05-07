@@ -42,14 +42,14 @@
         
         function arrayMap($c) {
             if (!empty($c)) {
-               
+               return ($a[$c]);
             } 
         }
 
         foreach($_POST['continent'] as $value) {
             echo $value;
         }
-        
+
         $c=$_POST["continent"];
         $a=array("NA"=>"North America", "SA"=>"South America", "EU"=>"Europe", "AS"=>"Asia", "AU"=>"Australia", "AF"=>"Africa", "AN"=>"Antarctica");
 
