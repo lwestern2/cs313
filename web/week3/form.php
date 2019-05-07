@@ -39,23 +39,12 @@
 
         $comments = ($_POST["comments"]);
         echo "Comments: $comments <br>";
-        
-        // function arrayMap($c) {
-        //     if (!empty($c)) {
-        //        return ($a[$c]);
-        //     } 
-        // }
+       
         $a=array("NA"=>"North America", "SA"=>"South America", "EU"=>"Europe", "AS"=>"Asia", "AU"=>"Australia", "AF"=>"Africa", "AN"=>"Antarctica");
 
         foreach($_POST['continent'] as $value) {
             echo $a[$value] . "<br>";
         }
-
-        
-        $c=$_POST["continent"];
-
-        // echo $c;
-        // echo (array_map("arrayMap",$c));
     }
     ?>
 </body>
