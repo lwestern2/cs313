@@ -48,7 +48,7 @@
         $a=array("NA"=>"North America", "SA"=>"South America", "EU"=>"Europe", "AS"=>"Asia", "AU"=>"Australia", "AF"=>"Africa", "AN"=>"Antarctica");
 
         foreach($_POST['continent'] as $value) {
-            echo $a[$value];
+            echo $a[$value] . "<br>";
         }
 
         
