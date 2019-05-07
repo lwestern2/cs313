@@ -50,9 +50,10 @@ h2 {
 }
 
 #dog {
-    width: 50vw;
+    width: 49vw;
+    margin-left: .3vw;
 }
 
 #dog1 {
-    width: 50vw;
+    width: 49vw;
 }
