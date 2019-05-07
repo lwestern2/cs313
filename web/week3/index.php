@@ -12,19 +12,20 @@
 </head>
 
 <body>
+<h1>Practice Form</h1>
 <form action="form.php" method="post"> 
  <label for="name">Name:</label>
- <input type="text" name="name">
+ <input type="text" name="name"> <br>
  <label for="email">Email:</label>
- <input type="text" name="email">
+ <input type="text" name="email"> <br>
 
- <label for="major">Select major</label>
+ <label for="major">Select major</label><br>
  <input type="radio" name="major" value="computerScience">Computer Science <br>
  <input type="radio" name="major" value="wdd">WDD <br>
  <input type="radio" name="major" value="cit">Computer Information Technology<br>
  <input type="radio" name="major" value="computerEngineering">Computer Engineering <br>
 
- <label for="name">Comments:</label>
+ <label for="name">Comments:</label><br>
  <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
 </form>
 </body>
