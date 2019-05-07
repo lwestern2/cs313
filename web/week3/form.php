@@ -16,7 +16,7 @@
         }
         else {
             $name = ($_POST["name"]);
-            echo "User Name: $name";
+            echo "User Name: $name <br>";
         }
 
         if (empty($_POST["email"])) {
@@ -24,7 +24,7 @@
         }
         else {
             $email = ($_POST["email"]);
-            echo "Mail To: $email";
+            echo 'Email: <a href="mailto:' + $email + '">' + $email + '</a><br>';
         }
 
         if (empty($_POST["major"])) {
@@ -32,11 +32,11 @@
         }
         else {
             $major = ($_POST["major"]);
-            echo "Major: $major";
+            echo "Major: $major <br>";
         }
 
         $comments = ($_POST["comments"]);
-        echo "Comments: $comments";
+        echo "Comments: $comments <br>";
         
     }
     ?>
