@@ -30,6 +30,7 @@ body {
 
 a {
     color: white;
+    text-decoration: none;
     padding: .5vw;
 }
 
@@ -40,9 +41,10 @@ a:hover {
 }
 
 h2 {
-    padding: 5px;
+    padding: 20px;
     margin: 0; 
     font-size: 3em;
+    position: absolute;
 }
 
 #dog {
