@@ -40,19 +40,17 @@
         $comments = ($_POST["comments"]);
         echo "Comments: $comments <br>";
         
-        if(empty($_POST["continent"])) {
-            echo "";
+        function arrayMap($c) {
+            if (!empty($c)) {
+                return ($a[$c]);
+            }
         }
-        else {
-        echo $_POST["continent"] . "<br>";
-        }
-        
-        echo $_POST["continent1"] . "<br>";
-        echo $_POST["continent2"] . "<br>";
-        echo $_POST["continent3"] . "<br>";
-        echo $_POST["continent4"] . "<br>";
-        echo $_POST["continent5"] . "<br>";
-        echo $_POST["continent6"] . "<br>";
+
+        print_r(array_map("arrayMap",$c));
+
+        $c=$_POST["continent"];
+        $a=array("NA"=>"North America", "SA"=>"South America", "EU"=>"Europe", "AS"=>"Asia", "AU"=>"Australia", "AF"=>"Africa", "AN"=>"Antarctica");
+
     }
     ?>
 </body>

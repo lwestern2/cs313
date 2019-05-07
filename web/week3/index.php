@@ -32,13 +32,13 @@
  <label for="name">Comments:</label><br>
  <textarea name="comments" id="comments" cols="30" rows="5"></textarea><br>
 
-<input type="checkbox" name="continent" value="North America"> North America <br>
-<input type="checkbox" name="continent1" value="South America"> South America <br>
-<input type="checkbox" name="continent2" value="Europe"> Europe <br>
-<input type="checkbox" name="continent3" value="Asia"> Asia <br>
-<input type="checkbox" name="continent4" value="Australia"> Australia <br>
-<input type="checkbox" name="continent5" value="Africa"> Africa <br>
-<input type="checkbox" name="continent6" value="Antarctica"> Antarctica <br>
+<input type="checkbox" name="continent[]" value="North America"> North America <br>
+<input type="checkbox" name="continent[]" value="South America"> South America <br>
+<input type="checkbox" name="continent[]" value="Europe"> Europe <br>
+<input type="checkbox" name="continent[]" value="Asia"> Asia <br>
+<input type="checkbox" name="continent[]" value="Australia"> Australia <br>
+<input type="checkbox" name="continent[]" value="Africa"> Africa <br>
+<input type="checkbox" name="continent[]" value="Antarctica"> Antarctica <br>
 
 <input type="submit"> 
 </form>
