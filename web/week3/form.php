@@ -26,7 +26,7 @@
         else {
             $email = ($_POST["email"]);
             $emailLink = 'Email: <a href="mailto:' + $email + '">' + $email + '</a><br>';
-            echo $emailLink;
+            echo "$emailLink";
         }
 
         if (empty($_POST["major"])) {
