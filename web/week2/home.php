@@ -16,11 +16,11 @@
             ?>
 
         <main>
+        <h2>Welcome to Dogs are Cute.Inc!</h2>
             <div class="images">
                 <img src="dog.jpg" alt="cute dog picture" id="dog">
                 <img src="dog1.jpeg" alt="cute dog picture" id="dog1">
             </div>
-            <h2>Welcome to Dogs are Cute.Inc!</h2>
         </main>
 
         <footer id="site-footer">

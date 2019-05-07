@@ -40,13 +40,9 @@ a:hover {
 }
 
 h2 {
-    text-align: center;
     padding: 5px;
     margin: 0; 
-}
-
-.images {
-    display: flex;
+    font-size: 3em;
 }
 
 #dog {
