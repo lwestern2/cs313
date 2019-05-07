@@ -40,7 +40,13 @@
         $comments = ($_POST["comments"]);
         echo "Comments: $comments <br>";
         
+        if(empty($_POST["continent"])) {
+            echo "";
+        }
+        else {
         echo $_POST["continent"] . "<br>";
+        }
+        
         echo $_POST["continent1"] . "<br>";
         echo $_POST["continent2"] . "<br>";
         echo $_POST["continent3"] . "<br>";
