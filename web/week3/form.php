@@ -27,12 +27,16 @@
         }
 
         if (empty($_POST["email"])) {
-            echo "Email is Required.";
+            $emailErr = "Email is Required.";
         }
         else {
             $email = ($_POST["email"]);
             $emailLink = 'Email: <a href="mailto:' . $email . '">' . $email . '</a><br>';
             echo "$emailLink";
+
+            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                $emailErr = "Invalid email format"; 
+              }
         }
 
         if (empty($_POST["major"])) {
