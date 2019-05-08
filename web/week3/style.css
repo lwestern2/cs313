@@ -3,9 +3,9 @@ body {
 }
 
 #major {
-    width: auto;
+    width: max-content;
 }
 
 #check {
-    width: auto;
+    width: max-content;
 }
