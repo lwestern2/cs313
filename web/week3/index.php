@@ -14,11 +14,11 @@
     <form action="form.php" method="post">
         <label for="name">Name:</label>
         <input type="text" name="name"> 
-        <span class="error">* <?php echo $nameErr;?></span>
+        <span class="error">*</span>
         <br>
         <label for="email">Email:</label>
         <input type="text" name="email"> 
-        <span class="error">* <?php echo $emailErr;?></span>
+        <span class="error">*</span>
         <br><br>
 
         <fieldset id="major">

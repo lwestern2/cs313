@@ -15,32 +15,24 @@
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (empty($_POST["name"])) {
-            $nameErr = "Name is Required.";
+            $nameErr = "Name is Required. <br>";
         }
         else {
             $name = ($_POST["name"]);
             echo "User Name: $name <br>";
-
-            if (!preg_match('/^[a-zA-Z ]*$/',$name)) {
-                $nameErr = "Only letters and white space allowed"; 
-              }
         }
 
         if (empty($_POST["email"])) {
-            $emailErr = "Email is Required.";
+            echo "Email is Required. <br>";
         }
         else {
             $email = ($_POST["email"]);
             $emailLink = 'Email: <a href="mailto:' . $email . '">' . $email . '</a><br>';
             echo "$emailLink";
-
-            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                $emailErr = "Invalid email format"; 
-              }
         }
 
         if (empty($_POST["major"])) {
-            echo "Major is Required.";
+            echo "Major is Required. <br>";
         }
         else {
             $major = ($_POST["major"]);
