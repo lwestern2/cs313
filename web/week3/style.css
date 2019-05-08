@@ -9,3 +9,7 @@ body {
 #check {
     width: max-content;
 }
+
+.error {
+    color: red;
+}

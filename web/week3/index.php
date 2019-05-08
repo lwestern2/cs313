@@ -13,9 +13,13 @@
     <h1>Practice Form</h1>
     <form action="form.php" method="post">
         <label for="name">Name:</label>
-        <input type="text" name="name"> <br>
+        <input type="text" name="name"> 
+        <span class="error">* <?php echo $nameErr;?></span>
+        <br>
         <label for="email">Email:</label>
-        <input type="text" name="email"> <br><br>
+        <input type="text" name="email"> 
+        <span class="error">* <?php echo $emailErr;?></span>
+        <br><br>
 
         <fieldset id="major">
         <label for="major">Select major</label><br>

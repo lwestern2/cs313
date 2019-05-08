@@ -11,14 +11,19 @@
 <body>
     <?php
     $name = $email = $major = $comments = "";
+    $nameErr = $emailErr = $majorErr = "";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (empty($_POST["name"])) {
-            echo "Name is Required.";
+            $nameErr = "Name is Required.";
         }
         else {
             $name = ($_POST["name"]);
             echo "User Name: $name <br>";
+
+            if (!preg_match('/^[a-zA-Z ]*$/',$name)) {
+                $nameErr = "Only letters and white space allowed"; 
+              }
         }
 
         if (empty($_POST["email"])) {
