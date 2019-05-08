@@ -17,6 +17,7 @@
         <label for="email">Email:</label>
         <input type="text" name="email"> <br><br>
 
+        <fieldset>
         <label for="major">Select major</label><br>
         <?php 
             $majorArray = array("CS"=>"Computer Science", "WDD"=>"Web Design & Development","CIT"=>"Computer Information Technology","CE"=>"Computer Engineering");
@@ -26,8 +27,10 @@
             }
  
         ?>
+        </fieldset>
         <br>
 
+        <fieldset>
         <label for="continent">Which continents have you been to?</label><br>
         <input type="checkbox" name="continent[]" value="NA"> North America <br>
         <input type="checkbox" name="continent[]" value="SA"> South America <br>
@@ -36,6 +39,7 @@
         <input type="checkbox" name="continent[]" value="AU"> Australia <br>
         <input type="checkbox" name="continent[]" value="AF"> Africa <br>
         <input type="checkbox" name="continent[]" value="AN"> Antarctica <br> <br>
+        </fieldset>
 
         <label for="name">Comments:</label><br>
         <textarea name="comments" id="comments" cols="30" rows="5"></textarea><br>
