@@ -1,3 +1,5 @@
+-- 6613fbb213fe196a1f1c7d70b24d9a800b185f8996da01ac94bf19ffd74bcfe3
+
 CREATE TABLE confUser (
 	user_id		int NOT NULL PRIMARY KEY,
 	username	varchar(80) NOT NULL unique,
@@ -30,7 +32,6 @@ INSERT INTO talk VALUES (1, 'HOPE', 'Bro. Thayne');
 INSERT INTO conf VALUES (1, '2019', 'April');
 
 INSERT INTO notes VALUES (1, 'Hope', 'I like this!', 1, 1, 1);
-INSERT INTO notes VALUES (2, 'Another Talk', 'Cool!');
 
 DROP TABLE confUser;
 DROP TABLE notes;
