@@ -15,7 +15,7 @@ $db = getDb();
         <h1>Scripture Resources</h1>
 
         <?php
-        $statement = $db->prepare('SELECT book, chapter, verse, content FROM scripture');
+        $statement = $db->query('SELECT book, chapter, verse, content FROM scripture');
         $statement->execute();
 
         while ($row = $statement->fetchAll(PDO::FETCH_ASSOC)) {
