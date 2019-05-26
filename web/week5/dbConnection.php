@@ -13,7 +13,7 @@ function getDb() {
         // $dbPort = '5432';
 
         $dbHost = $dbOpts["host"];
-        $dbPort = $dbOpts["port"];
+        $dbPort = 5432;
         $dbUser = $dbOpts["user"];
         $dbPassword = $dbOpts["pass"];
         $dbName = ltrim($dbOpts["path"], '/');
