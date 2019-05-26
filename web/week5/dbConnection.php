@@ -6,17 +6,17 @@ function getDb() {
         $dbUrl = getenv('DATABASR_URL');
 
         $dbOpts = parse_url($dbUrl);
-        $dbUser = 'ta_user';
-        $dbPassword = 'ta_pass';
-        $dbName = 'scripture_ta';
-        $dbHost = 'localhost';
-        $dbPort = '5432';
+        // $dbUser = 'ta_user';
+        // $dbPassword = 'ta_pass';
+        // $dbName = 'scripture_ta';
+        // $dbHost = 'localhost';
+        // $dbPort = '5432';
 
-        // $dbHost = $dbOpts["host"];
-        // $dbPort = $dbOpts["port"];
-        // $dbUser = $dbOpts["user"];
-        // $dbPassword = $dbOpts["pass"];
-        // $dbName = ltrim($dbOpts["path"], '/');
+        $dbHost = $dbOpts["host"];
+        $dbPort = $dbOpts["port"];
+        $dbUser = $dbOpts["user"];
+        $dbPassword = $dbOpts["pass"];
+        $dbName = ltrim($dbOpts["path"], '/');
 
         $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
 
