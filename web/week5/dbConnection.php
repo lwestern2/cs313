@@ -19,7 +19,7 @@ function getDb() {
         // $dbName = ltrim($dbOpts["path"], '/');
 
         $db = new PDO("pgsql:host=ec2-54-235-167-210.compute-1.amazonaws.com
-        ;dbname=d6oki00667h33u", 'smorcmcpfbcunb', '6613fbb213fe196a1f1c7d70b24d9a800b185f8996da01ac94bf19ffd74bcfe3
+        ;dbname=d6oki00667h33u", 'smorcmcpfbcunb', 'True2god'
         ');
 
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
