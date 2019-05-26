@@ -1,4 +1,4 @@
-function getDb() {
+<?php function getDb() {
     $db = NULL;
 
     try {
@@ -24,3 +24,4 @@ function getDb() {
 
     return $db;
 }
+?>
