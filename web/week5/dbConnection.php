@@ -3,7 +3,7 @@ function getDb() {
     $db = NULL;
 
     try {
-        $dbUrl = getenv('DATABASR_URL');
+        $dbUrl = pg_connect(getenv("DATABASR_URL"));
 
         $dbOpts = parse_url($dbUrl);
         // $dbUser = 'ta_user';
