@@ -15,10 +15,10 @@ $db = getDb();
         <h1>Scripture Resources</h1>
 
         <?php
-        $statement = $db->prepare("SELECT book, chapter, verse, content FROM scripture");
+        $statement = $db->prepare('SELECT book, chapter, verse, content FROM scripture');
         $statement->execute();
 
-        while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+        while ($row = $statement->fetchAll(PDO::FETCH_ASSOC)) {
             $book = $row['book'];
             $chapter = $row['chapter'];
             $verse = $row['verse'];
