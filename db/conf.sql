@@ -39,3 +39,4 @@ DROP TABLE talk;
 DROP TABLE conf;
 
 SELECT * FROM notes;
+
