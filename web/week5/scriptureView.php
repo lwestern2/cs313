@@ -1,7 +1,3 @@
-<?php
-require "dbConnection.php";
-$db = getDb();
-?>
 
 <!DOCTYPE html>
 <html>
