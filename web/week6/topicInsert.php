@@ -5,7 +5,7 @@ $verse = $_POST['verse'];
 $content = $_POST['content'];
 $topic = $_POST['topics'];
 
-require("dbConnect.php");
+require("dbConnection.php");
 $db = get_db();
 
 try
