@@ -13,10 +13,10 @@ try
 	$query = 'INSERT INTO scripture(book, chapter, verse, content) VALUES(:book, :chapter, :verse, :content)';
 	$statement = $db->prepare($query);
 	
-	$statement->bindValue(':book', $book);
-	$statement->bindValue(':chapter', $chapter);
-	$statement->bindValue(':verse', $verse);
-	$statement->bindValue(':content', $content);
+	$statement->bindValue(':book', $book, PDO::PARAM_STR);
+	$statement->bindValue(':chapter', $chapter, PDO::PARAM_INT);
+	$statement->bindValue(':verse', $verse, PDO::PARAM_INT);
+	$statement->bindValue(':content', $content, PDO::PARAM_STR);
     $statement->execute();
     
     $scriptureId = $db->lastInsertId("scripture_id_seq");
