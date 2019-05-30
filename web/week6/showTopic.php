@@ -48,6 +48,7 @@ catch (PDOException $ex)
 ?>
 
 </div>
+<a href="<?php header("Location: enterScript.php")?>">Add New Scripture</a>
 
 </body>
 </html>
