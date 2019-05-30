@@ -24,7 +24,8 @@ $db = getDb();
             $verse = $row['verse'];
             $content = $row['content'];
 
-            echo "<p><strong>$book $chapter:$verse</strong> - <p><a>View More</a>";
+            echo "<p><strong>$book $chapter:$verse</strong> - <p>";
+            echo "<a href=scriptureDetails.php>View More</a>"
         }
 
         ?>
