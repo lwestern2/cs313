@@ -2,6 +2,7 @@
 require("dbConnection.php");
 $db = get_db();
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
