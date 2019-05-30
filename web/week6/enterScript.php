@@ -14,7 +14,7 @@ $db = getDb();
 
 <h1>Enter A New Scripture and Topic</h1>
 
-<form id="mainForm" action="insertTopic.php" method="POST">
+<form id="mainForm" action="topicInsert.php" method="POST">
 	<label for="booK">Book</label>
 	<input type="text" id="book" name="book">
 	<br /><br />
