@@ -1,7 +1,20 @@
 <?php
     include "dbConnection.php";
     $db = getDb();
+?>
 
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Scripture Details</title>
+</head>
+
+<body>
+    <div>
+        <h1>Scripture Details</h1>
+
+<?php
     $statement = $db->query('SELECT book, chapter, verse, content FROM scripture');
     $statement->execute();
 
@@ -24,3 +37,6 @@
         echo '<p>'.$row['content'].'</p>';
     }
 ?>
+</div>
+</body>
+</html>
