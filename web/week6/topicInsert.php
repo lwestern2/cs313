@@ -6,7 +6,7 @@ $content = $_POST['content'];
 $topic = $_POST['topics'];
 
 require("dbConnection.php");
-$db = get_db();
+$db = getDb();
 
 try
 {
