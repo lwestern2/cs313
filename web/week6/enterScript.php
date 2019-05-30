@@ -36,13 +36,13 @@ $db = getDb();
 <?php
 try
 {
-	$statement = $db->prepare('SELECT id, name FROM topic');
+	$statement = $db->prepare('SELECT id, topic_name FROM topic');
 	$statement->execute();
 
     while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 	{
 		$id = $row['id'];
-        $name = $row['name'];
+        $name = $row['topic_name'];
         
 		echo "<input type='checkbox' name='topics[]' id='topics$id' value='$id'>";
 		

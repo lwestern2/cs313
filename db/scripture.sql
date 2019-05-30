@@ -16,8 +16,8 @@ DROP TABLE scripture;
 SELECT * FROM scripture;
 
 CREATE TABLE topic (
-  id 	SERIAL PRIMARY KEY NOT NULL,
-  name 	VARCHAR(40) NOT NULL
+  id 	  SERIAL PRIMARY KEY NOT NULL,
+  topic_name 	VARCHAR(40) NOT NULL
   );
 
 INSERT INTO topic (name) VALUES ('Faith');
