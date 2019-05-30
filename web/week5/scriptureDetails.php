@@ -5,7 +5,6 @@
     $statement = $db->query('SELECT book, chapter, verse, content FROM scripture');
     $statement->execute();
 
-    while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
         $book = $row['book'];
         $chapter = $row['chapter'];
         $verse = $row['verse'];
