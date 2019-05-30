@@ -1,5 +1,6 @@
 <?php
     include "dbConnection.php";
+    $db = getDb();
 
     $queries = array();
     parse_str($_SERVER['QUERY_STRING'], $queries);
