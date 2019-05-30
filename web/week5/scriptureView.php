@@ -24,7 +24,7 @@ $db = getDb();
             $verse = $row['verse'];
             $content = $row['content'];
 
-            echo $book;
+            echo "<p><strong>$book $chapter:$verse</strong> - \"$content\"<p>";
         }
 
         ?>
