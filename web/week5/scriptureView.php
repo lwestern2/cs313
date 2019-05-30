@@ -26,8 +26,8 @@ $db = getDb();
             $content = $row['content'];
 
             echo "<p><strong>$book $chapter:$verse</strong><p>";
-            echo "<a href='scriptureDetails.php?id=" . $row['id'];
-            echo "'>View More</a>";
+            echo '<a href="scriptureDetails.php?id=' . $row['id'];
+            echo '">View More</a>';
         }
 
         ?>
