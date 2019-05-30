@@ -15,7 +15,7 @@ $db = getDb();
         <h1>Scripture Resources</h1>
 
         <?php
-        $statement = $db->query('SELECT book, chapter, verse, content FROM scripture');
+        $statement = $db->query('SELECT id, book, chapter, verse, content FROM scripture');
         $statement->execute();
 
         while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
@@ -26,7 +26,8 @@ $db = getDb();
             $content = $row['content'];
 
             echo "<p><strong>$book $chapter:$verse</strong><p>";
-            echo "<a href='scriptureDetails.php?id='. $row['id']'>View More</a>";
+            echo "<a href='scriptureDetails.php?id=" . $row['id'];
+            echo "'>View More</a>";
         }
 
         ?>
