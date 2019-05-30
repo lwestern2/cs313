@@ -22,7 +22,7 @@ $db = getDb();
             $book = $row['book'];
             $chapter = $row['chapter'];
             $verse = $row['verse'];
-            $content = $row['content'];
+            // $content = $row['content'];
 
             echo "<a href="scriptureDetails.php"><strong>$book $chapter:$verse</strong><a>";
         }
