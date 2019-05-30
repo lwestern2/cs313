@@ -25,8 +25,8 @@ try
 	{
 		echo "ScriptureId: $scriptureId, topicId: $topicId";
 		$statement = $db->prepare('INSERT INTO scripture_topic(scriptureId, topicId) VALUES(:scriptureId, :topicId)');
-		$statement->bindValue(':scriptureId', $scriptureId);
-		$statement->bindValue(':topicId', $topicId);
+		$statement->bindValue(':scriptureId', $scriptureId, PDO::PARAM_INT);
+		$statement->bindValue(':topicId', $topicId, PDO::PARAM_INT);
 		$statement->execute();
 	}
 }

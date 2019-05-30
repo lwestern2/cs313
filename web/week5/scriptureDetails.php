@@ -15,13 +15,10 @@
         <h1>Scripture Details</h1>
 
 <?php
+
+
     $statement = $db->query('SELECT id, book, chapter, verse, content FROM scripture');
     $statement->execute();
-
-    //     $book = $row['book'];
-    //     $chapter = $row['chapter'];
-    //     $verse = $row['verse'];
-    //     $content = $row['content'];
 
     $stmt = $db->prepare('SELECT * FROM scripture WHERE id = :id');
     $stmtTopics->bindValue(':id', $row['id']);

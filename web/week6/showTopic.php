@@ -30,7 +30,7 @@ try
         $stmtTopics = $db->prepare('SELECT name FROM topic t'
 			. ' INNER JOIN scripture_topic st ON st.topicId = t.id'
 			. ' WHERE st.scriptureId = :scriptureId');
-		$stmtTopics->bindValue(':scriptureId', $row['id']);
+		$stmtTopics->bindValue(':scriptureId', $row['id'], PDO::PARAM_INT);
         $stmtTopics->execute();
         
 		while ($topicRow = $stmtTopics->fetch(PDO::FETCH_ASSOC))
