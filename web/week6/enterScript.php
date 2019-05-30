@@ -6,26 +6,25 @@ $db = getDb();
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Topic Entry</title>
+	<title>Add New Scripture</title>
 </head>
 
 <body>
 <div>
 
-<h1>Enter A New Scripture or Topic</h1>
+<h1>Enter A New Scripture and Topic</h1>
 
 <form id="mainForm" action="insertTopic.php" method="POST">
-
-	<input type="text" id="book" name="book">
 	<label for="booK">Book</label>
+	<input type="text" id="book" name="book">
 	<br /><br />
 
-	<input type="text" id="chapter" name="chapter">
 	<label for="chapter">Chapter</label>
+	<input type="text" id="chapter" name="chapter">
 	<br /><br />
 
-	<input type="text" id="verse" name="verse">
 	<label for="verse">Verse</label>
+	<input type="text" id="verse" name="verse">
 	<br /><br />
 
 	<label for="content">Content:</label><br />

@@ -36,7 +36,7 @@ catch (Exception $ex)
 	die();
 }
 
-header("Location: showTopics.php");
+header("Location: showTopic.php");
 
 die();
 
