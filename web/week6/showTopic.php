@@ -27,7 +27,7 @@ try
 		echo '<br />';
 		echo 'Topics: ';
 
-        $stmtTopics = $db->prepare('SELECT name FROM topic t'
+        $stmtTopics = $db->prepare('SELECT topic_name FROM topic t'
 			. ' INNER JOIN scripture_topic st ON st.topicId = t.id'
 			. ' WHERE st.scriptureId = :scriptureId');
 		$stmtTopics->bindValue(':scriptureId', $row['id'], PDO::PARAM_INT);
