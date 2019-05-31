@@ -29,11 +29,9 @@
 
     $rows = $statement->fetch(PDO::FETCH_ASSOC);
 
-    foreach ($rows as $row){
         echo '<strong>' . $row['book'] .' '. $row['chapter'] .':'. $row['verse'];
         echo '</strong>';
         echo '<p>'.$row['content'].'</p>';
-    }
 ?>
 
 <a href="scriptureView.php">View All</a>
