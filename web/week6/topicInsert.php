@@ -21,7 +21,7 @@ try
     
     $scriptureId = $db->lastInsertId("scripture_id_seq");
     
-	foreach ($topicIds as $topicId)
+	foreach ($topic as $topicId)
 	{
 		echo "ScriptureId: $scriptureId, topicId: $topicId";
 		$statement = $db->prepare('INSERT INTO scripture_topic(scriptureId, topicId) VALUES(:scriptureId, :topicId)');
