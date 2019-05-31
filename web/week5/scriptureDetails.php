@@ -27,7 +27,7 @@
     // $stmt->bindValue(':verse', $verse, PDO::PARAM_INT);
     // $stmt->execute();
 
-    $rows = $statement->fetch(PDO::FETCH_ASSOC);
+    $row = $statement->fetch(PDO::FETCH_ASSOC);
 
         echo '<strong>' . $row['book'] .' '. $row['chapter'] .':'. $row['verse'];
         echo '</strong>';
