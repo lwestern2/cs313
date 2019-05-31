@@ -17,17 +17,17 @@
 <?php
 
 
-    $statement = $db->query('SELECT id, book, chapter, verse, content FROM scripture WHERE id =' . $_GET['id']);
+    $stmt = $db->prepare('SELECT id, book, chapter, verse, content FROM scripture WHERE id = :id');
     // $statement->execute();
 
     // $stmt = $db->prepare('SELECT * FROM scripture WHERE id = :id');
     // $stmtTopics->bindValue(':id', $row['id']);
-    // $stmt->bindValue(':book', $book, PDO::PARAM_STR);
+    $stmt->bindValue(':id', $_GET['id'], PDO::PARAM_INT);
     // $stmt->bindValue(':chapter', $chapter, PDO::PARAM_INT);
     // $stmt->bindValue(':verse', $verse, PDO::PARAM_INT);
-    // $stmt->execute();
+    $stmt->execute();
 
-    $row = $statement->fetch(PDO::FETCH_ASSOC);
+    $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
         echo '<strong>' . $row['book'] .' '. $row['chapter'] .':'. $row['verse'];
         echo '</strong>';
