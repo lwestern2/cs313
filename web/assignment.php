@@ -24,6 +24,7 @@ include("nav.php");
             <li class="a-item"><a href="/week3/index.php">Week 3</a></li><br>
             <li class="a-item"><a href="/week5/scriptureView.php">Week 5</a></li><br>
             <li class="a-item"><a href="/week6/showTopic.php">Week 6</a></li><br>
+            <li class="a-item"><a href="/week5/prove/listView.php">Project</a></li><br>
         </ul>
     </main>
 </body>

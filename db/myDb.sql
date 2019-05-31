@@ -8,17 +8,19 @@ CREATE TABLE hw_user (
 
 CREATE TABLE hw (
 	hw_id		SERIAL NOT NULL PRIMARY KEY,
-    data        Date NOT NULL,
+    date_add    Date NOT NULL,
 	hw_name		varchar(80) NOT NULL,
+	hw_text		varchar(80) NOT NULL,
 	class_code	varchar(80) NOT NULL,
     due_date    Date NOT NULL
 );
 
 CREATE TABLE to_do (
 	list_id		SERIAL NOT NULL PRIMARY KEY,
+	list		varchar(80) NOT NULL,
 	list_text	varchar(80) NOT NULL,
-	due_date	Date NOT NULL,
-    data        Date NOT NULL
+	date_done	Date NOT NULL,
+    date_add    Date NOT NULL
 );
 
 CREATE TABLE calendar (
@@ -28,9 +30,9 @@ CREATE TABLE calendar (
 	user_id		SERIAL NOT NULL REFERENCES hw_user(user_id)
 );
 
-INSERT INTO hw_user VALUES (1, 'username', 'password123');
-INSERT INTO hw VALUES (1, '2019-05-18', 'Database Setup', 'CIT 313', '2019-05-21');
-INSERT INTO to_do VALUES (1, 'Clean apartment', '2019-05-21', '2019-05-15');
+INSERT INTO hw_user (username, password) VALUES ('username', 'password123');
+INSERT INTO hw (date_add, hw_name, hw_text, class_code, due_date) VALUES ('2019-05-18', 'Database Setup', 'Assignment instructions', 'CIT 313', '2019-05-21');
+INSERT INTO to_do (list, list_text, date_done, date_add) VALUES ('Clean apartment', 'Do dishes, vaccum, dust', '2019-05-21', '2019-05-15');
 
 DROP TABLE hw_user;
 DROP TABLE hw;
