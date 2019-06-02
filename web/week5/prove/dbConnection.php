@@ -3,23 +3,17 @@ function getDb() {
     $db = NULL;
 
     try {
-//         $dbUrl = getenv('postgres://fmpgurhhoetphn:a3ab69363b4c84cc276e0c3dcc8a4172e66b50ee9c3c5afff530f46796375789@ec2-54-243-197-120.compute-1.amazonaws.com:5432/d42lngvdmnhqsb
-//         ');
+        $dbUrl = getenv('DATABASE_URL');
 
-//   $dbOpts = parse_url($dbUrl);
+  $dbOpts = parse_url($dbUrl);
 
-//   $dbHost = $dbOpts["host"];
-//   $dbPort = $dbOpts["port"];
-//   $dbUser = $dbOpts["user"];
-//   $dbPassword = $dbOpts["pass"];
-//   $dbName = ltrim($dbOpts["path"],'/');
+  $dbHost = $dbOpts["host"];
+  $dbPort = $dbOpts["port"];
+  $dbUser = $dbOpts["user"];
+  $dbPassword = $dbOpts["pass"];
+  $dbName = ltrim($dbOpts["path"],'/');
 
-  $db = new PDO("pgsql:host=ec2-54-243-197-120.compute-1.amazonaws.com
-  ;port=5432
-  ;dbname=d42lngvdmnhqsb
-  ;fmpgurhhoetphn
-  ;a3ab69363b4c84cc276e0c3dcc8a4172e66b50ee9c3c5afff530f46796375789
-);
+  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
 
   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     }
