@@ -1,5 +1,5 @@
 <?php
-require "dbConnection.php";
+include "dbConnection.php";
 $db = getDb();
 ?>
 
@@ -19,7 +19,7 @@ $db = getDb();
         $statement = $db->query('SELECT hw_id, date_add, hw_name, hw_text, class_code, due_date FROM hw');
         $statement->execute();
 
-        while ($row = $statement->fetchAll(PDO::FETCH_ASSOC)) {
+        while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
             $id = $row['hw_id'];
             $date = $row['date_add'];
             $name = $row['hw_name'];
