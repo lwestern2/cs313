@@ -1,6 +1,5 @@
 <?php
 include "dbConnection.php";
-console.log($db);
 $db = getDb();
 ?>
 
@@ -28,8 +27,8 @@ $db = getDb();
             $class = $row['class_code'];
             $due = $row['due_date'];
 
-            echo "<p><strong>$class: $name</strong></p>"
-            echo "<p>Due: $due<p>";
+            echo "<p><strong>$class: $name</strong></p>";
+            echo "<p>Due: $due</p>";
             echo '<a href="details.php?id=' . $row['hw_id'];
             echo '">View More</a>';
         }
