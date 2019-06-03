@@ -1,5 +1,6 @@
 <?php
 include "dbConnection.php";
+console.log($db);
 $db = getDb();
 ?>
 
