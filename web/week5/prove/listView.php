@@ -36,28 +36,9 @@ $db = getDb();
 
         ?>
 
-        <div>
-        <h2>To do</h2>
+        <!-- <div>
+        <h2>To do</h2> -->
 
-        <?php
-        // $statement = $db->query('SELECT list_id, list, list_text, date_done, date_add FROM to_do');
-        // $statement->execute();
-
-        // while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-        //     $id = $row['list_id'];
-        //     $date = $row['date_add'];
-        //     $list = $row['list'];
-        //     $text = $row['list_text'];
-        //     $done = $row['date_done'];
-
-        //     echo "<p><strong>$list</strong></p>"
-        //     echo "<p>Do by: $done<p>";
-        //     echo '<a href="details.php?id=' . $row['list_id'];
-        //     echo '">View More</a>';
-        // }
-
-        ?>
-        </div>
     </div>
 </body>
 
