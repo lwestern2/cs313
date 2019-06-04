@@ -61,7 +61,7 @@ $db = getDb();
         ?>
 
         <br>
-        <a href="addHw.php">Add Homework</a>
+        <a href="addList.php">Add to List</a>
 
     </div>
 </body>
