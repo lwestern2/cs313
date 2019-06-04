@@ -26,7 +26,7 @@ $db = getDb();
 	<input type="text" id="list" name="list">
 	<br /><br />
 
-	<label for="list_text">Details/Notes</label><br>
+	<label for="list_text">Details/Notes:</label><br>
 	<textarea id="list_text" name="list_text" rows="4" cols="50"></textarea>
 	<br /><br />
 

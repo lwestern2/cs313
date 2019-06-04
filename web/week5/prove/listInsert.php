@@ -9,7 +9,7 @@ $db = getDb();
 
 try
 {
-	$query = 'INSERT INTO to_do(list, list_text, date_done, date_add) VALUES(:dateAdd, :list, :listText, :do)';
+	$query = 'INSERT INTO to_do(list, list_text, date_done, date_add) VALUES(:list, :listText, :do, :dateAdd)';
 	$statement = $db->prepare($query);
 	
 	$statement->bindValue(':dateAdd', $date, PDO::PARAM_STR);
