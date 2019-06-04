@@ -20,13 +20,10 @@ $db = getDb();
 
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    echo '<strong>' . $row['class_code'] .' '. $row['hw_name'] .':'. $row['hw_text'];
-
-
-        // echo '<p><strong>' . $row['class_code'] .': '. $row['hw_name'] . '</strong></p>';
-        // echo '<p>' . $row['hw_text'] . '</p>';
-        // echo '<p style="color: red;"><strong>Due: '. $row['due_date'] . '</strong></p>';
-        // echo '<p>Date Added: ' . $row['date_add'] . '</p>';
+        echo '<p><strong>' . $row['class_code'] .': '. $row['hw_name'] . '</strong></p>';
+        echo '<p>' . $row['hw_text'] . '</p>';
+        echo '<p style="color: red;"><strong>Due: '. $row['due_date'] . '</strong></p>';
+        echo '<p>Date Added: ' . $row['date_add'] . '</p>';
 ?>
 
 <a href="listView.php">View All</a>
