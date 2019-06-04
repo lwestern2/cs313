@@ -20,7 +20,7 @@ try
     $statement->bindValue(':due', $due, PDO::PARAM_STR);
     $statement->execute();
     
-    $hwId = $db->lastInsertId("hw_id_seq");
+    // $hwId = $db->lastInsertId("hw_id_seq");
     
 	// foreach ($topic as $topicId)
 	// {
