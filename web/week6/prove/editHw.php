@@ -1,9 +1,4 @@
 <?php
-$id = $_GET['hw_id'];
-
-$result = pg_query("SELECT * FROM hw where hw_id = '$_GET[hw_id]'");
-$row = pg_fetch_assoc($result);
-
 require("dbConnection.php");
 $db = getDb();
 ?>
@@ -18,25 +13,32 @@ $db = getDb();
 <div>
 <h1>Edit Homework Details</h1>
 
+<?php
+$stmt = $db->prepare('SELECT hw_id, date_add, hw_name, hw_text, class_code, due_date FROM hw WHERE hw_id = :hw_id');
+$stmt->bindValue(':hw_id', $_GET['hw_id'], PDO::PARAM_INT);
+$stmt->execute();
+
+?>
+
 <form id="mainForm" action="hwUpdate.php" method="POST">
     <label for="class_code">Class:</label>
-	<input type="text" id="class_code" name="class_code" value="$row[class_code]">
+	<input type="text" id="class_code" name="class_code" value="<?php $row['class_code'] ?>">
 	<br /><br />
 
 	<label for="hw_name">Assignment Title:</label>
-	<input type="text" id="hw_name" name="hw_name" value="$row[hw_name]">
+	<input type="text" id="hw_name" name="hw_name" value="<?php $row['hw_name'] ?>">
 	<br /><br />
 
 	<label for="hw_text">Instructions:</label><br>
-	<textarea id="hw_text" name="hw_text" rows="4" cols="50" value="$row[hw_text]"></textarea>
+	<textarea id="hw_text" name="hw_text" rows="4" cols="50" value="<?php $row['hw_text'] ?>"></textarea>
 	<br /><br />
 
 	<label for="due_date">Due Date:</label>
-	<input type="date" id="due_date" name="due_date" value="$row[due_date]">
+	<input type="date" id="due_date" name="due_date" value="<?php $row['due_date'] ?>">
 	<br /><br />
 
 	<label for="date_add">Date Added:</label>
-    <input type="date" value="$row[date_add]" id="date_add" name="date_add">
+    <input type="date" value="<?php $row['date_add'] ?>" id="date_add" name="date_add">
 	<br /><br />
 
 	<input type="submit" value="Update Homework Assignment">
