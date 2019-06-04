@@ -35,8 +35,13 @@ $db = getDb();
 
         ?>
 
-        <!-- <div>
-        <h2>To do</h2> -->
+        <a href="addHw.php">Add Homework</a>
+        </div>
+
+        <div>
+        <h2>To do</h2>
+
+        
 
     </div>
 </body>

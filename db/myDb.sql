@@ -32,9 +32,14 @@ CREATE TABLE calendar (
 
 INSERT INTO hw_user (username, password) VALUES ('username', 'password123');
 INSERT INTO hw (date_add, hw_name, hw_text, class_code, due_date) VALUES ('2019-05-18', 'Database Setup', 'Assignment instructions', 'CIT 313', '2019-05-21');
+INSERT INTO hw (date_add, hw_name, hw_text, class_code, due_date) VALUES ('2019-05-25', 'Persuasive Essay', 'Assignment instructions', 'CIT 230', '2019-05-28');
+INSERT INTO hw (date_add, hw_name, hw_text, class_code, due_date) VALUES ('2019-05-30', 'Project 1', 'Assignment instructions', 'CIT 366', '2019-06-03');
 INSERT INTO to_do (list, list_text, date_done, date_add) VALUES ('Clean apartment', 'Do dishes, vaccum, dust', '2019-05-21', '2019-05-15');
+INSERT INTO to_do (list, list_text, date_done, date_add) VALUES ('Get car washed', '', '2019-05-31', '2019-05-25');
+INSERT INTO to_do (list, list_text, date_done, date_add) VALUES ('Got to the store', 'Eggs, Milk (2), bread, strawberries', '2019-06-3', '2019-05-28');
 
-DROP TABLE hw_user;
+
+DROP TABLE hw_user;25
 DROP TABLE hw;
 DROP TABLE to_do;
 DROP TABLE calendar;
