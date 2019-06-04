@@ -14,12 +14,12 @@ $db = getDb();
 
 <?php
 
-    $stmt = $db->prepare('SELECT hw_id, date_add, hw_name, hw_text, class_code, due_date FROM hw WHERE id = :id');
+    $stmt = $db->prepare('SELECT hw_id, date_add, hw_name, hw_text, class_code, due_date FROM hw WHERE hw_id = :id');
     // $statement->execute();
 
     // $stmt = $db->prepare('SELECT * FROM scripture WHERE id = :id');
     // $stmtTopics->bindValue(':id', $row['id']);
-    $stmt->bindValue(':id', $_GET['id'], PDO::PARAM_INT);
+    $stmt->bindValue(':id', $_GET['hw_id'], PDO::PARAM_INT);
     $stmt->execute();
 
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
