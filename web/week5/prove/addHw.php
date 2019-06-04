@@ -6,63 +6,45 @@ $db = getDb();
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Add New Scripture</title>
+	<title>Add New Homework</title>
 </head>
 
 <body>
 <div>
+<h1>Enter A New Homework Assignment</h1>
 
-<h1>Enter A New Scripture and Topic</h1>
-
-<form id="mainForm" action="topicInsert.php" method="POST">
-	<label for="booK">Book</label>
-	<input type="text" id="book" name="book">
+<form id="mainForm" action="hwInsert.php" method="POST">
+    <label for="class">Class</label>
+	<input type="text" id="class_code" name="class">
 	<br /><br />
 
-	<label for="chapter">Chapter</label>
-	<input type="text" id="chapter" name="chapter">
+	<label for="name">Assignment Title</label>
+	<input type="text" id="hw_name" name="name">
 	<br /><br />
 
-	<label for="verse">Verse</label>
-	<input type="text" id="verse" name="verse">
+	<label for="hw_text">Instructions</label>
+	<input type="text" id="hw_text" name="hw_text">
 	<br /><br />
 
-	<label for="content">Content:</label><br />
-	<textarea id="content" name="content" rows="4" cols="50"></textarea>
+	<label for="due">Due Date</label>
+	<input type="date" id="due_date" name="due">
 	<br /><br />
 
-	<label>Topics:</label><br />
+	<label for="date">Date Added:</label><br />
+    <input type="date" value="<?php echo $today; ?>" id="date" name="date">
+	<br /><br />
 
-<?php
-try
-{
-	$statement = $db->prepare('SELECT id, topic_name FROM topic');
-	$statement->execute();
+    <?php 
+    $month = date('m');
+    $day = date('d');
+    $year = date('Y');
 
-    while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-	{
-		$id = $row['id'];
-        $name = $row['topic_name'];
-        
-		echo "<input type='checkbox' name='topics[]' id='topics$id' value='$id'>";
-		
-		echo "<label for='topics$id'>$name</label><br />";
-        echo "\n";
-	}
-}
-catch (PDOException $ex)
-{
-	echo "Error connecting to DB. Details: $ex";
-	die();
-}
-?>
+    $today = $year . '-' . $month . '-' . $day;
+    ?>
+	<br>
 
-	<br />
-
-	<input type="submit" value="Add to Database" />
-
+	<input type="submit" value="Add Homework Assignment">
 </form>
-
 
 </div>
 

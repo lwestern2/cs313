@@ -52,7 +52,7 @@ $db = getDb();
             $done = $row['date_done'];
             $add = $row['date_add'];
 
-            echo "<p><strong>$name -</strong></p>";
+            echo "<p><strong>$name</strong></p>";
             echo "<p>Do by: $done</p>";
             echo '<a href="detailsList.php?id=' . $row['list_id'];
             echo '">View More</a>';
