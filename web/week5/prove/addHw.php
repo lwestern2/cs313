@@ -30,7 +30,7 @@ $db = getDb();
 	<input type="text" id="hw_name" name="name">
 	<br /><br />
 
-	<label for="hw_text">Instructions:</label>
+	<label for="hw_text">Instructions:</label><br>
 	<textarea id="hw_text" name="hw_text" rows="4" cols="50"></textarea>
 	<br /><br />
 
