@@ -1,5 +1,5 @@
 <?php
-include "dbConnection.php";
+require("dbConnection.php");
 $db = getDb();
 ?>
 

@@ -1,5 +1,5 @@
 <?php
-include "dbConnection.php";
+require("dbConnection.php");
 $db = getDb();
 ?>
 
@@ -14,7 +14,7 @@ $db = getDb();
 
 <?php
 
-    $stmt = $db->prepare('SELECT list_id, list, list_text, date_done, date_add FROM hw WHERE list_id = :list_id');
+    $stmt = $db->prepare('SELECT list_id, list, list_text, date_done, date_add FROM to_do WHERE list_id = :list_id');
     $stmt->bindValue(':list_id', $_GET['list_id'], PDO::PARAM_INT);
     $stmt->execute();
 
