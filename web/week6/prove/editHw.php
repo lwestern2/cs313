@@ -1,7 +1,7 @@
 <?php
 $id = $_GET['hw_id'];
 
-$result = pg_query("SELECT * FROM hw where hw_id = '$_Get[hw_id]'");
+$result = pg_query("SELECT * FROM hw where hw_id = '$_GET[hw_id]'");
 $row = pg_fetch_assoc($result);
 
 require("dbConnection.php");
