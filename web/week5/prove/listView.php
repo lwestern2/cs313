@@ -29,19 +29,38 @@ $db = getDb();
 
             echo "<p><strong>$class: $name</strong></p>";
             echo "<p>Due: $due</p>";
-            echo '<a href="details.php?id=' . $row['hw_id'];
+            echo '<a href="detailsHw.php?id=' . $row['hw_id'];
             echo '">View More</a>';
         }
 
         ?>
-
+        <br>
         <a href="addHw.php">Add Homework</a>
         </div>
 
         <div>
         <h2>To do</h2>
 
+        <?php
+        $statement = $db->query('SELECT list_id, list, list_text, date_done, date_add FROM to_do');
+        $statement->execute();
+
+        while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+            $id = $row['list_id'];
+            $name = $row['list'];
+            $text = $row['list_text'];
+            $done = $row['date_done'];
+            $add = $row['date_add'];
+
+            echo "<p><strong>$name -</strong>Do by: $done</p>";
+            echo '<a href="detailsList.php?id=' . $row['list_id'];
+            echo '">View More</a>';
+        }
+
+        ?>
         
+        <br>
+        <a href="addHw.php">Add Homework</a>
 
     </div>
 </body>
