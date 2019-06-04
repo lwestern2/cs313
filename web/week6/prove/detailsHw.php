@@ -24,10 +24,10 @@ $db = getDb();
         echo '<p>' . $row['hw_text'] . '</p>';
         echo '<p style="color: red;"><strong>Due: '. $row['due_date'] . '</strong></p>';
         echo '<p>Date Added: ' . $row['date_add'] . '</p>';
-?>
 
-<a href="editHw.php?id=" . <?php $row['hw_id']?>>Edit</a>
-<a href="deleteHw.php">Delete</a>
+        echo '<a href="editHw.php?id=' . $row['hw_id'];
+        echo '">Edit</a>';
+?>
 <br>
 <a href="listView.php">View All</a>
 
