@@ -54,7 +54,7 @@ $db = getDb();
 
             echo "<p><strong>$name</strong></p>";
             echo "<p>Do by: $done</p>";
-            echo '<a href="detailsList.php?id=' . $row['list_id'];
+            echo '<a href="detailsList.php?list_id=' . $row['list_id'];
             echo '">View More</a>';
         }
 

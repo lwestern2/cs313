@@ -18,14 +18,17 @@ $db = getDb();
     $stmt->bindValue(':list_id', $_GET['list_id'], PDO::PARAM_INT);
     $stmt->execute();
 
-    $row = $stmt->fetch(PDO::FETCH_ASSOC))
+    $row = $stmt->fetch(PDO::FETCH_ASSOC));
 
         echo '<p><strong>' . $row['list'] .'</strong></p>';
         echo '<p>' . $row['list_text'] . '</p>';
         echo '<p style="color: red;"><strong>Do by: '. $row['date_done'] . '</strong></p>';
         echo '<p>Date Added: ' . $row['date_add'] . '</p>';
-?>
 
+        echo '<a href="editList.php?id=' . $row['list_id'];
+        echo '">Edit</a>';
+?>
+<br>
 <a href="listView.php">View All</a>
 
 </body>
