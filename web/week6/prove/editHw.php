@@ -14,15 +14,15 @@ $db = getDb();
 <h1>Edit Homework Details</h1>
 
 <?php
-$stmt = $db->prepare('SELECT hw_id, date_add, hw_name, hw_text, class_code, due_date FROM hw WHERE hw_id = :hw_id');
-$stmt->bindValue(':hw_id', $_GET['hw_id'], PDO::PARAM_INT);
-$stmt->execute();
+// $stmt = $db->prepare('SELECT hw_id, date_add, hw_name, hw_text, class_code, due_date FROM hw WHERE hw_id = :hw_id');
+// $stmt->bindValue(':hw_id', $_GET['hw_id'], PDO::PARAM_INT);
+// $stmt->execute();
 
 ?>
 
 <form id="mainForm" action="hwUpdate.php" method="POST">
     <label for="class_code">Class:</label>
-	<input type="text" id="class_code" name="class_code" value="<?php $row['class_code']; ?>">
+	<input type="text" id="class_code" name="class_code" value="<?php $_GET['class_code']; ?>">
 	<br /><br />
 
 	<label for="hw_name">Assignment Title:</label>
