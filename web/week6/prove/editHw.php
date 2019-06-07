@@ -14,11 +14,13 @@ $db = getDb();
 <h1>Edit Homework Details</h1>
 
 <?php
-// $stmt = $db->prepare('SELECT hw_id, date_add, hw_name, hw_text, class_code, due_date FROM hw WHERE hw_id = :hw_id');
-// $stmt->bindValue(':hw_id', $_GET['hw_id'], PDO::PARAM_INT);
-// $stmt->execute();
+$stmt = $db->prepare('SELECT hw_id, date_add, hw_name, hw_text, class_code, due_date FROM hw WHERE hw_id = :hw_id');
+$stmt->bindValue(':hw_id', $_GET['hw_id'], PDO::PARAM_INT);
+$stmt->execute();
 
-$name = $_GET['class_code'];
+$row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+$name = $row['class_code'];
 echo $name;
 ?>
 
