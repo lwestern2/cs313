@@ -24,14 +24,6 @@ $db = getDb();
     $stmt->execute();
 
     $rows = $stmt->fetchAll(PDO::FETCH_ASSOC))
-        // $id = $row['hw_id'];
-        // $date = $row['date_add'];
-        // $name = $row['hw_name'];
-        // $text = $row['hw_text'];
-        // $class = $row['class_code'];
-        // $due = $row['due_date'];
-
-    foreach ($rows as $row) {
         echo '<p><strong>' . $row['class_code'] .': ' . $row['hw_name']. '</strong></p>';
         echo '<p>' . $row['hw_text']. '</p>';
         echo '<p style="color: red;"><strong>Due: ' . $row['due_date'] . '</strong></p>';
@@ -39,7 +31,17 @@ $db = getDb();
 
         echo '<a href="editHw.php?id=' . $row['hw_id'];
         echo '">Edit</a>';
-    }
+    
+
+    // foreach ($rows as $row) {
+    //     echo '<p><strong>' . $row['class_code'] .': ' . $row['hw_name']. '</strong></p>';
+    //     echo '<p>' . $row['hw_text']. '</p>';
+    //     echo '<p style="color: red;"><strong>Due: ' . $row['due_date'] . '</strong></p>';
+    //     echo '<p>Date Added: ' . $row['date_add'] . '</p>';
+
+    //     echo '<a href="editHw.php?id=' . $row['hw_id'];
+    //     echo '">Edit</a>';
+    // }
 ?>
 <br>
 <a href="listView.php">View All</a>
