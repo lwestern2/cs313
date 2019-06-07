@@ -16,7 +16,7 @@ $db = getDb();
     $hw_id = htmlspecialchars($_GET['hw_id']);
 
     $stmt = $db->prepare('SELECT hw_id, date_add, hw_name, hw_text, class_code, due_date FROM hw WHERE hw_id = :hw_id');
-    $stmt->bindValue(':hw_id', $hw_id, PDO::PARAM_INT);
+    $stmt->bindValue(':hw_id', $_GET['hw_id'], PDO::PARAM_INT);
     $stmt->execute();
 
     $rows = $stmt->fetchAll(PDO::FETCH_ASSOC));
