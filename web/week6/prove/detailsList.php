@@ -25,7 +25,7 @@ $db = getDb();
         echo '<p style="color: red;"><strong>Do by: '. $row['date_done'] . '</strong></p>';
         echo '<p>Date Added: ' . $row['date_add'] . '</p>';
 
-        echo '<a href="editList.php?id=' . $row['list_id'];
+        echo '<a href="editList.php?list_id=' . $row['list_id'];
         echo '">Edit</a>';
 ?>
 <br>
