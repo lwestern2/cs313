@@ -24,6 +24,9 @@ $db = getDb();
         echo '<p>' . $row['hw_text'] . '</p>';
         echo '<p style="color: red;"><strong>Due: '. $row['due_date'] . '</strong></p>';
         echo '<p>Date Added: ' . $row['date_add'] . '</p>';
+
+        echo '<a href="editHw.php?id=$id';
+        echo '">Edit</a>';
 ?>
 
 <a href="listView.php">View All</a>
