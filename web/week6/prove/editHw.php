@@ -20,13 +20,11 @@ $stmt->execute();
 
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
-$name = $row['class_code'];
-echo $name;
 ?>
 
 <form id="mainForm" action="hwUpdate.php" method="POST">
     <label for="class_code">Class:</label>
-	<input type="text" id="class_code" name="class_code" value="<?php echo $name; ?>">
+	<input type="text" id="class_code" name="class_code" value="<?php echo $row['class_code']; ?>">
 	<br /><br />
 
 	<label for="hw_name">Assignment Title:</label>
@@ -34,15 +32,15 @@ echo $name;
 	<br /><br />
 
 	<label for="hw_text">Instructions:</label><br>
-	<textarea id="hw_text" name="hw_text" rows="4" cols="50" value="<?php $row['hw_text']; ?>"></textarea>
+	<textarea id="hw_text" name="hw_text" rows="4" cols="50" value="<?php echo $row['hw_text']; ?>"></textarea>
 	<br /><br />
 
 	<label for="due_date">Due Date:</label>
-	<input type="date" id="due_date" name="due_date" value="<?php $row['due_date']; ?>">
+	<input type="date" id="due_date" name="due_date" value="<?php echo $row['due_date']; ?>">
 	<br /><br />
 
 	<label for="date_add">Date Added:</label>
-    <input type="date" value="<?php $row['date_add']; ?>" id="date_add" name="date_add">
+    <input type="date" value="<?php echo $row['date_add']; ?>" id="date_add" name="date_add">
 	<br /><br />
 
 	<input type="submit" value="Update Homework Assignment">
