@@ -18,7 +18,7 @@ $db = getDb();
     $stmt->bindValue(':list_id', $_GET['list_id'], PDO::PARAM_INT);
     $stmt->execute();
 
-    $row = $stmt->fetch(PDO::FETCH_ASSOC));
+    $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
         echo '<p><strong>' . $row['list'] .'</strong></p>';
         echo '<p>' . $row['list_text'] . '</p>';
