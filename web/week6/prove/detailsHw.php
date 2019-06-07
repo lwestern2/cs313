@@ -22,8 +22,15 @@ $db = getDb();
 
 
     foreach ($rows as $row) {
+        $id = $row['hw_id'];
+        $date = $row['date_add'];
+        $name = $row['hw_name'];
+        $text = $row['hw_text'];
+        $class = $row['class_code'];
+        $due = $row['due_date'];
+
         echo '<p><strong>' . $row['class_code'] .': '. $row['hw_name'] . '</strong></p>';
-        echo '<p>' . $row['hw_text'] . '</p>';
+        echo "<p>$text</p>";
         echo '<p style="color: red;"><strong>Due: '. $row['due_date'] . '</strong></p>';
         echo '<p>Date Added: ' . $row['date_add'] . '</p>';
 
