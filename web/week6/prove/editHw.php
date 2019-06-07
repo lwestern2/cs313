@@ -26,7 +26,7 @@ echo $name;
 
 <form id="mainForm" action="hwUpdate.php" method="POST">
     <label for="class_code">Class:</label>
-	<input type="text" id="class_code" name="class_code" value="<?php $_GET['class_code']; ?>">
+	<input type="text" id="class_code" name="class_code" value="<?php $name; ?>">
 	<br /><br />
 
 	<label for="hw_name">Assignment Title:</label>
