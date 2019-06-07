@@ -18,7 +18,9 @@ $db = getDb();
     $stmt->bindValue(':hw_id', $_GET['hw_id'], PDO::PARAM_INT);
     $stmt->execute();
 
-    $row = $stmt->fetch(PDO::FETCH_ASSOC);
+    $rows = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    foreach ($rows as $row) {
 
         echo '<p><strong>' . $row['class_code'] .': '. $row['hw_name'] . '</strong></p>';
         echo '<p>' . $row['hw_text'] . '</p>';
@@ -27,6 +29,7 @@ $db = getDb();
 
         echo '<a href="editHw.php?id=$id';
         echo '">Edit</a>';
+    }
 ?>
 
 <a href="listView.php">View All</a>
