@@ -14,29 +14,23 @@ $db = getDb();
 
 <?php
 
-    $stmt = $db->prepare('SELECT hw_id, date_add, hw_name, hw_text, class_code, due_date FROM hw WHERE hw_id = :hw_id');
+    $stmt = $db->prepare('SELECT hw_id, date_add, hw_name, hw_text, class_code, due_date FROM hw WHERE hw_id=:hw_id');
     $stmt->bindValue(':hw_id', $_GET['hw_id'], PDO::PARAM_INT);
     $stmt->execute();
 
-    $rows = $stmt->fetch(PDO::FETCH_ASSOC);
+    $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 
-    foreach ($rows as $row) {
-        $id = $row['hw_id'];
-        $date = $row['date_add'];
-        $name = $row['hw_name'];
-        $text = $row['hw_text'];
-        $class = $row['class_code'];
-        $due = $row['due_date'];
+    // foreach ($rows as $row) {
 
         echo '<p><strong>' . $row['class_code'] .': '. $row['hw_name'] . '</strong></p>';
-        echo "<p>$text</p>";
+        echo '<p>' . $row['hw_text'] . '</p>';
         echo '<p style="color: red;"><strong>Due: '. $row['due_date'] . '</strong></p>';
         echo '<p>Date Added: ' . $row['date_add'] . '</p>';
 
-        echo '<a href="editHw.php?id=$id';
+        echo '<a href="editHw.php?id=' . $row['hw_id'];
         echo '">Edit</a>';
-    }
+    
 ?>
 
 <a href="listView.php">View All</a>

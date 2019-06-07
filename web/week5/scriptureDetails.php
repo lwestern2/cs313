@@ -21,7 +21,6 @@
     // $statement->execute();
 
     // $stmt = $db->prepare('SELECT * FROM scripture WHERE id = :id');
-    // $stmtTopics->bindValue(':id', $row['id']);
     $stmt->bindValue(':id', $_GET['id'], PDO::PARAM_INT);
     $stmt->execute();
 
