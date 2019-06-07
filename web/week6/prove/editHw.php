@@ -22,7 +22,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 ?>
 
-<form id="mainForm" action="hwUpdate.php" method="POST">
+<form id="mainForm" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="POST">
     <label for="class_code">Class:</label>
 	<input type="text" id="class_code" name="class_code" value="<?php echo $row['class_code']; ?>">
 	<br /><br />
@@ -45,6 +45,19 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 	<input type="submit" value="Update Homework Assignment">
 </form>
+
+<?php
+$stmt = $db->prepare('UPDATE hw SET class_code = $_POST[class_code],
+hw_name = $_POST[hw_name], hw_text = $_POST[hw_text],
+due_date = $_POST[due_date], date_add = $_POST[date_add] WHERE hw_id=:hw_id');
+
+$stmt->bindValue(':hw_id', $_GET['hw_id'], PDO::PARAM_INT);
+$stmt->execute();
+
+if($stmt) {
+	echo "Done";
+}
+?>
 
 </div>
 
