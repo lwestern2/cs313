@@ -18,7 +18,7 @@ $db = getDb();
     $stmt->bindValue(':hw_id', $_GET['hw_id'], PDO::PARAM_INT);
     $stmt->execute();
 
-    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+    $rows = $stmt->fetchAll(PDO::FETCH_ASSOC))
         // $id = $row['hw_id'];
         // $date = $row['date_add'];
         // $name = $row['hw_name'];
@@ -26,6 +26,7 @@ $db = getDb();
         // $class = $row['class_code'];
         // $due = $row['due_date'];
 
+    foreach ($rows as $row) {
         echo '<p><strong>' . $row['class_code'] .': ' . $row['hw_name']. '</strong></p>';
         echo '<p>' . $row['hw_text']. '</p>';
         echo "<p style='color: red;'><strong>Due: $due</strong></p>";
