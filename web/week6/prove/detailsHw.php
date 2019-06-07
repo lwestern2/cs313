@@ -19,19 +19,19 @@ $db = getDb();
     $stmt->execute();
 
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-        $id = $row['hw_id'];
-        $date = $row['date_add'];
-        $name = $row['hw_name'];
-        $text = $row['hw_text'];
-        $class = $row['class_code'];
-        $due = $row['due_date'];
+        // $id = $row['hw_id'];
+        // $date = $row['date_add'];
+        // $name = $row['hw_name'];
+        // $text = $row['hw_text'];
+        // $class = $row['class_code'];
+        // $due = $row['due_date'];
 
-        echo "<p><strong>$class: $name </strong></p>";
-        echo "<p>$text</p>";
+        echo '<p><strong>' . $row['class_code'] .': ' . $row['hw_name']. '</strong></p>';
+        echo '<p>' . $row['hw_text']. '</p>';
         echo "<p style='color: red;'><strong>Due: $due</strong></p>";
         echo "<p>Date Added: $date</p>";
 
-        echo '<a href="editHw.php?id=' . $id;
+        echo '<a href="editHw.php?id=' . $row['hw_id'];
         echo '">Edit</a>';
     }
 ?>

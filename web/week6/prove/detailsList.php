@@ -18,13 +18,12 @@ $db = getDb();
     $stmt->bindValue(':list_id', $_GET['list_id'], PDO::PARAM_INT);
     $stmt->execute();
 
-    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+    $row = $stmt->fetch(PDO::FETCH_ASSOC))
 
         echo '<p><strong>' . $row['list'] .'</strong></p>';
         echo '<p>' . $row['list_text'] . '</p>';
         echo '<p style="color: red;"><strong>Do by: '. $row['date_done'] . '</strong></p>';
         echo '<p>Date Added: ' . $row['date_add'] . '</p>';
-    }
 ?>
 
 <a href="listView.php">View All</a>
