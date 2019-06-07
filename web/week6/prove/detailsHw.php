@@ -16,11 +16,11 @@ $db = getDb();
 
     $stmt = $db->prepare('SELECT hw_id, date_add, hw_name, hw_text, class_code, due_date FROM hw WHERE hw_id = :hw_id');
     $stmt->bindValue(':hw_id', $_GET['hw_id'], PDO::PARAM_INT);
-    $stmt->bindValue(':date_add', $date);
-    $stmt->bindValue(':hw_name', $name);
-    $stmt->bindValue(':hw_text', $text);
-    $stmt->bindValue(':class_code', $class);
-    $stmt->bindValue(':due_date', $due);
+    // $stmt->bindValue(':date_add', $date);
+    // $stmt->bindValue(':hw_name', $name);
+    // $stmt->bindValue(':hw_text', $text);
+    // $stmt->bindValue(':class_code', $class);
+    // $stmt->bindValue(':due_date', $due);
     $stmt->execute();
 
     $rows = $stmt->fetchAll(PDO::FETCH_ASSOC))
