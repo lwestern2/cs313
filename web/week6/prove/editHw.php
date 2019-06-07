@@ -32,7 +32,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 	<br /><br />
 
 	<label for="hw_text">Instructions:</label><br>
-	<textarea id="hw_text" name="hw_text" rows="4" cols="50" value="<?php echo $row['hw_text']; ?>"></textarea>
+	<textarea id="hw_text" name="hw_text" rows="4" cols="50"><?php echo $row['hw_text']; ?></textarea>
 	<br /><br />
 
 	<label for="due_date">Due Date:</label>
