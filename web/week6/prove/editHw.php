@@ -18,6 +18,8 @@ $db = getDb();
 // $stmt->bindValue(':hw_id', $_GET['hw_id'], PDO::PARAM_INT);
 // $stmt->execute();
 
+$name = $_GET['class_code'];
+echo $name;
 ?>
 
 <form id="mainForm" action="hwUpdate.php" method="POST">
