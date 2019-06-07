@@ -30,7 +30,7 @@ $db = getDb();
             echo "<p><strong>$class: $name</strong></p>";
             echo "<p>Due: $due</p>";
             echo '<a href="detailsHw.php?id=' . $row['hw_id'];
-            echo ''">View More</a>';
+            echo '">View More</a>';
         }
 
         ?>
