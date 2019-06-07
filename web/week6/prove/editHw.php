@@ -30,7 +30,7 @@ echo $name;
 	<br /><br />
 
 	<label for="hw_name">Assignment Title:</label>
-	<input type="text" id="hw_name" name="hw_name" value="<?php $row['hw_name']; ?>">
+	<input type="text" id="hw_name" name="hw_name" value="<?php echo $row['hw_name']; ?>">
 	<br /><br />
 
 	<label for="hw_text">Instructions:</label><br>
