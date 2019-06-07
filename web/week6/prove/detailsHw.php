@@ -18,7 +18,7 @@ $db = getDb();
     $stmt->bindValue(':hw_id', $_GET['hw_id'], PDO::PARAM_INT);
     $stmt->execute();
 
-    while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
         $id = $row['hw_id'];
         $date = $row['date_add'];
         $name = $row['hw_name'];
