@@ -20,6 +20,8 @@ $db = getDb();
 
     $rows = $stmt->fetch(PDO::FETCH_ASSOC);
 
+
+    foreach ($rows as $row) {
         echo '<p><strong>' . $row['class_code'] .': '. $row['hw_name'] . '</strong></p>';
         echo '<p>' . $row['hw_text'] . '</p>';
         echo '<p style="color: red;"><strong>Due: '. $row['due_date'] . '</strong></p>';
@@ -27,6 +29,7 @@ $db = getDb();
 
         echo '<a href="editHw.php?id=$id';
         echo '">Edit</a>';
+    }
 ?>
 
 <a href="listView.php">View All</a>
