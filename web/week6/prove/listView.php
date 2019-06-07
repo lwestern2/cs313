@@ -29,7 +29,8 @@ $db = getDb();
 
             echo "<p><strong>$class: $name</strong></p>";
             echo "<p>Due: $due</p>";
-            echo '<a href="detailsHw.php?hw_id=$id'">View More</a>';
+            echo '<a href="detailsHw.php?hw_id=$id';
+            echo ''">View More</a>';
         }
 
         ?>
