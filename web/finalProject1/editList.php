@@ -22,7 +22,7 @@ $db = getDb();
 
     ?>
 
-<form id="mainForm" action="listUpdate.php" method="POST">
+<form id="mainForm" action="listUpdate.php?list_id=<?php echo $row['list_id']; ?>" method="POST">
     <label for="list">Title:</label>
 	<input type="text" id="list" name="list" value="<?php echo $row['list']; ?>">
 	<br /><br />
@@ -39,7 +39,8 @@ $db = getDb();
     <input type="date" value="<?php echo $row['date_add']; ?>" id="date_add" name="date_add">
 	<br /><br />
 
-	<input type="submit" value="Update To-do List">
+	<input type="submit" name="save" value="Save">
+	<input type="button" name="cancel" value="Cancel" onClick="history.back();">
 </form>
 
 </div>

@@ -43,7 +43,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
     <input type="date" value="<?php echo $row['date_add']; ?>" id="date_add" name="date_add">
 	<br /><br />
 
-	<input type="submit" value="Update Homework Assignment">
+	<input type="submit" value="Save">
 </form>
 
 </div>
