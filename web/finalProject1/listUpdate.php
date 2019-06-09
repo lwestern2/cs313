@@ -10,7 +10,7 @@ $do = $_POST['date_done'];
 
 try {
 $query = ("UPDATE to_do SET list = '$listname',
-list_text = '$list_text', date_done = '$do', 
+list_text = '$listtext', date_done = '$do', 
 date_add = '$listdate' WHERE list_id = $_GET[list_id]");
 $stmt = $db->prepare($query);
 $stmt->execute();
