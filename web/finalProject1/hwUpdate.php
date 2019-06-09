@@ -12,7 +12,7 @@ $due = $_POST['due_date'];
 try {
 $query = "UPDATE hw SET class_code = '$class',
 hw_name = '$hwname', hw_text = '$hwtext',
-due_date = '$due', date_add = '$hwdate' WHERE hw_id = 1";
+due_date = '$due', date_add = '$hwdate' WHERE hw_id = $hwid";
 $stmt = $db->prepare($query);
 $stmt->execute();
 }
