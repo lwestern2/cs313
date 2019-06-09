@@ -22,7 +22,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 ?>
 
-<form id="mainForm" action="hwUpdate.php" method="POST">
+<form id="mainForm" action="hwUpdate.php?hw_id=<?php echo $row['hw_id']; ?>" method="POST">
     <label for="class_code">Class:</label>
 	<input type="text" id="class_code" name="class_code" value="<?php echo $row['class_code']; ?>">
 	<br /><br />
