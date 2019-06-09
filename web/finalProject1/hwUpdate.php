@@ -9,7 +9,7 @@ $hwtext = $_POST['hw_text'];
 $class = $_POST['class_code'];
 $due = $_POST['due_date'];
 
-echo "ID: " . $_POST['hw_id'];
+echo "ID: " . $_GET['hw_id'];
 
 try {
 $query = ("UPDATE hw SET class_code = '$class',
