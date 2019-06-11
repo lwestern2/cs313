@@ -43,7 +43,7 @@ $db = getDb();
     <input type="date" value="<?php echo $today; ?>" id="date_add" name="date_add">
 	<br /><br />
 
-	<input class="btn" type="submit" value="Add Homework Assignment">
+	<input class="btn form" type="submit" value="Add Homework Assignment">
 	<input class="btn-cancel form" type="button" name="cancel" value="Cancel" onClick="history.back();">
 </form>
 

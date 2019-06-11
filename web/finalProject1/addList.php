@@ -12,7 +12,7 @@ $db = getDb();
 
 <body>
 <div>
-<h3 class="heading">Enter to To-do List</h3>
+<h3 class="heading">Add to To-do List</h3>
 
 <?php 
     $month = date('m');
@@ -39,7 +39,7 @@ $db = getDb();
     <input type="date" value="<?php echo $today; ?>" id="date_add" name="date_add">
 	<br /><br />
 
-	<input class="btn" type="submit" value="Add to To-do List">
+	<input class="btn form" type="submit" value="Add to To-do List">
 	<input class="btn-cancel form" type="button" name="cancel" value="Cancel" onClick="history.back();">
 </form>
 
