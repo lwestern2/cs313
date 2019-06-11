@@ -18,7 +18,7 @@
 <div class="body">
 <div class="events">
 <?php
-include listView.php;
+include 'listView.php';
 ?>
 
 </div>
