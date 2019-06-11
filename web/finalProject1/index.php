@@ -1,5 +1,4 @@
 <?php 
-include 'functions.php'; 
 ?>
 
 <!DOCTYPE html>
@@ -9,43 +8,24 @@ include 'functions.php';
     <title>Homework Calendar</title>
     <meta charset="utf-8">
 
-<style>
-.yui3-button {
-    margin:10px 0px 10px 0px;
-    color: #fff;
-    background-color: #3476b7;
-}
-</style>
+    <link rel="stylesheet" href="style.css">
+    <div id="calendar"></div>
+    <script src="functions.js"></script>
+</head>
 
-<div id="demo" class="yui3-skin-sam yui3-g"> <!-- You need this skin class -->
-
-  <div id="leftcolumn" class="yui3-u">
-     <div id="mycalendar"></div>
-  </div>
-  <div id="rightcolumn" class="yui3-u">
-   <div id="links" style="padding-left:20px;">
-      Events on: <span id="selecteddate"></span>
-   </div>
-  </div>
+<div class="container" id="main">
+    <div class="jumbotron">
+        <h1 class="text-center">
+            <a id="left" href="#"><i class="fa fa-chevron-left"> </i></a>
+            <span>&nbsp;</span><span id="month"> </span><span>&nbsp;</span>
+            <span id="year"> </span><span>&nbsp;</span><a id="right" href="#"><i class="fa fa-chevron-right"> </i></a>
+        </h1>
+    </div>
+    <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+            <table class="table"></table>
+        </div>
+    </div>
 </div>
-
-<script type="text/javascript">
-YUI().use('calendar', 'datatype-date', 'cssbutton',  function(Y) {
-    var calendar = new Y.Calendar({
-      contentBox: "#mycalendar",
-      width:'340px',
-      showPrevMonth: true,
-      showNextMonth: true,
-      date: new Date()}).render();
-
-    var dtdate = Y.DataType.Date;
-
-    calendar.on("selectionChange", function (ev) {
-      var newDate = ev.newSelection[0];
-
-      Y.one("#selecteddate").setHTML(dtdate.format(newDate));
-    });
-});
-</script>
 
 </html>
