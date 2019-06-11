@@ -7,11 +7,12 @@ $db = getDb();
 <html>
 <head>
 	<title>Edit To-Do List</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 <div>
-<h1>Edit To-do List Details</h1>
+<h3 class="heading">Edit To-do List Details</h3>
 
 <?php 
     $stmt = $db->prepare('SELECT list_id, list, list_text, date_done, date_add FROM to_do WHERE list_id = :list_id');
@@ -39,8 +40,8 @@ $db = getDb();
     <input type="date" value="<?php echo $row['date_add']; ?>" id="date_add" name="date_add">
 	<br /><br />
 
-	<input type="submit" name="save" value="Save">
-	<input type="button" name="cancel" value="Cancel" onClick="history.back();">
+	<input class="btn form" type="submit" name="save" value="Save">
+	<input class="btn-cancel form" type="button" name="cancel" value="Cancel" onClick="history.back();">
 </form>
 
 </div>

@@ -25,7 +25,7 @@ catch (Exception $ex)
 	die();
 }
 
-header("Location: listView.php");
+header("Location: index.php");
 
 die();
 ?>
