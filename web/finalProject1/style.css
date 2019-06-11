@@ -8,11 +8,11 @@ ul {
 
 body {
     font-family: Verdana, sans-serif;
-    max-width: 80vw;
+    max-width: 70vw;
 }
 
 .month {
-    padding: 70px 25px;
+    padding: 1vw 25px;
     width: 100%;
     background: #1abc9c;
     text-align: center;
