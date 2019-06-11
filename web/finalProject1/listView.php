@@ -28,11 +28,12 @@ $db = getDb();
             $due = $row['due_date'];
 
             echo "<div class='hw-con'>";
-            echo "<p><strong>$class: $name</strong></p>";
-            echo "<p>Due: $due</p>";
             echo '<a class="details-btn" href="detailsHw.php?hw_id=' . $row['hw_id'];
             echo '">View Details</a>';
+            echo "<p><strong>$class: $name</strong></p>";
+            echo "<p>Due: $due</p>";
             echo "</div>";
+            echo "<hr>";
         }
 
         ?>
