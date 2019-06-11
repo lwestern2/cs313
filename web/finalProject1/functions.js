@@ -5,7 +5,7 @@
     function Calendar(selector, events) {
       this.el = document.querySelector(selector);
       this.events = events;
-      this.current = new Date().date(1);
+      this.current = new Date();
       this.draw();
       var current = document.querySelector('.today');
       if(current) {
