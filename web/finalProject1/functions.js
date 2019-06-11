@@ -5,7 +5,9 @@
     function Calendar(selector, events) {
       this.el = document.querySelector(selector);
       this.events = events;
+      var dateFormat = require('dateformat');
       this.current = new Date();
+      dateFormat(now, "MMMM YYYY");
       this.draw();
       var current = document.querySelector('.today');
       if(current) {
@@ -44,7 +46,7 @@
         this.el.appendChild(this.header);
       }
   
-      this.title.innerHTML = this.current.format('MMMM YYYY');
+      this.title.innerHTML = this.current;
     }
   
     Calendar.prototype.drawMonth = function() {
