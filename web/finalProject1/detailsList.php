@@ -28,7 +28,7 @@ $db = getDb();
         echo '<a href="editList.php?list_id=' . $row['list_id'];
         echo '">Edit</a>';
 
-        echo '<a href="deletelist.php?list_id=' . $row['list_id'];
+        echo '<a href="deleteList.php?list_id=' . $row['list_id'];
         echo '">Delete</a>';
 ?>
 <br>
