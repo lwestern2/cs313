@@ -45,8 +45,8 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
     <input type="date" value="<?php echo $row['date_add']; ?>" id="date_add" name="date_add">
 	<br /><br />
 
-	<input class="btn" type="submit" name="save" value="Save">
-	<input class="btn-cancel" type="button" name="cancel" value="Cancel" onClick="history.back();">
+	<input class="btn form" type="submit" name="save" value="Save">
+	<input class="btn-cancel form" type="button" name="cancel" value="Cancel" onClick="history.back();">
 </form>
 
 </div>
