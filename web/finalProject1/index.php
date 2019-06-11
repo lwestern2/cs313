@@ -19,7 +19,7 @@
         <li class="next">&#10095;</li>
         <li>
             June<br>
-            <span style="font-size:18px">2019</span>
+            <span style="font-size:20px">2019</span>
         </li>
     </ul>
 </div>
