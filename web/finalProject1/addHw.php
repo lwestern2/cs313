@@ -44,6 +44,7 @@ $db = getDb();
 	<br /><br />
 
 	<input class="btn" type="submit" value="Add Homework Assignment">
+	<input class="btn-cancel form" type="button" name="cancel" value="Cancel" onClick="history.back();">
 </form>
 
 </div>
