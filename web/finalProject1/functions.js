@@ -1,7 +1,6 @@
-function Calendar() {
-    var currentDate = new Date();
-
     function generateCalendar(d) {
+        var currentDate = new Date();
+
         function monthDays(month, year) {
             var result = [];
             var days = new Date(year, month, 0).getDate();
@@ -104,4 +103,3 @@ function Calendar() {
         }
     });
     generateCalendar(currentDate);
-};
