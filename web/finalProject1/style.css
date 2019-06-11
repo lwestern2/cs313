@@ -101,6 +101,7 @@ a.details-btn {
     cursor: pointer;
     text-decoration: none;
     color: black;
+    float: right;
 }
 
 a.details-btn:hover {
