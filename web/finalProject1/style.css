@@ -113,6 +113,32 @@ a.details-btn:hover {
     color: black;
 }
 
-.hw-con {
-    /* display: flex; */
+/* dropdown */
+.dropbtn {
+    background-color: #1abc9c;
+    color: black;
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #128870;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.show {
+    display: block;
 }

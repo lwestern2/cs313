@@ -9,11 +9,12 @@ $db = getDb();
 <head>
     <title>Homework Calendar</title>
     <link rel="stylesheet" href="style.css">
+    <script src="functions.js">
 </head>
 
 <body>
-    <div>
-        <h2>Homework</h2>
+    <div class="dropdown">
+    <button onclick="dropdown()" class="dropbtn">Dropdown</button>
 
         <?php
         $statement = $db->query('SELECT hw_id, date_add, hw_name, hw_text, class_code, due_date FROM hw ORDER BY due_date ASC');
@@ -27,7 +28,7 @@ $db = getDb();
             $class = $row['class_code'];
             $due = $row['due_date'];
 
-            echo "<div class='hw-con'>";
+            echo "<div id='myDropdown' class='dropdown-content'>";
             echo '<a class="details-btn" href="detailsHw.php?hw_id=' . $row['hw_id'];
             echo '">View Details...</a>';
             echo "<p><strong>$class: $name</strong></p>";
