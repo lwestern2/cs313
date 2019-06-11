@@ -7,6 +7,7 @@ $db = getDb();
 <html>
 <head>
 	<title>Edit Homework</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
