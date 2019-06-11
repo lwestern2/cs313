@@ -43,10 +43,10 @@ $db = getDb();
         <a class="add-btn" href="addHw.php">Add Homework</a>
 
         <div>
-        <h2>To do</h2>
+        <button class="collapsible">To-Do</button>
 
         <?php
-        $statement = $db->query('SELECT list_id, list, list_text, date_done, date_add FROM to_do');
+        $statement = $db->query('SELECT list_id, list, list_text, date_done, date_add FROM to_do ORDER BY date_done ASC');
         $statement->execute();
 
         while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
@@ -56,16 +56,19 @@ $db = getDb();
             $done = $row['date_done'];
             $add = $row['date_add'];
 
+            echo "<div class='content'>";
+            echo '<a class="details-btn" href="detailsList.php?list_id=' . $row['list_id'];
+            echo '">View More</a>';
             echo "<p><strong>$name</strong></p>";
             echo "<p>Do by: $done</p>";
-            echo '<a href="detailsList.php?list_id=' . $row['list_id'];
-            echo '">View More</a>';
+            echo "<hr>";
+            echo "</div>";
         }
 
         ?>
 
         <br>
-        <a href="addList.php">Add to List</a>
+        <a class="add-btn" href="addList.php">Add to List</a>
 
     </div>
 </body>
