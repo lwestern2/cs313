@@ -21,7 +21,7 @@ $stmt->execute();
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
 ?>
 
-<h1>Are you sure you want to delete <?php echo $row['list']; ?>?</h1>
+<h3 class="heading">Are you sure you want to delete <?php echo $row['list']; ?>?</h3>
 
 <form id="mainForm" action="listDelete.php?list_id=<?php echo $row['list_id']; ?>" method="POST">
 
