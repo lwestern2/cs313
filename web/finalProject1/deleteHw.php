@@ -19,7 +19,6 @@ $stmt->bindValue(':hw_id', $_GET['hw_id'], PDO::PARAM_INT);
 $stmt->execute();
 
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
-$row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 ?>
 
