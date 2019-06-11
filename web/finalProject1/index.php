@@ -13,6 +13,13 @@
 </head>
 
 <body class="main">
+<h1>Homework & To-Do List Calendar</h1>
+
+<div class="events">
+<p>using to test</p>
+
+</div>
+<div class="calendar">
 <div class="month">
     <ul>
         <li class="prev">&#10094;</li>
@@ -66,6 +73,7 @@
     <li>29</li>
     <li>30</li>
 </ul>
+</div>
 
 </body>
 

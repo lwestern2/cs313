@@ -8,6 +8,15 @@ ul {
 
 body {
     font-family: Verdana, sans-serif;
+    display: flex;
+}
+
+.calendar {
+    max-width: 50vw;
+    padding-top: 10px;
+}
+
+.events {
     max-width: 50vw;
     padding-top: 10px;
 }
