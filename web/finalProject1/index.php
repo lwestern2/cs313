@@ -9,8 +9,8 @@ include 'functions.php';
     <title>Homework Calendar</title>
     <meta charset="utf-8">
 
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
