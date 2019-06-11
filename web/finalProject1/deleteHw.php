@@ -6,7 +6,8 @@ $db = getDb();
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Delete Homework Assignment</title>
+    <title>Delete Homework Assignment</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -21,7 +22,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 ?>
 
-<h3 class="heading">Are you sure you want to delete <?php echo $row['hw_name']; ?></h3>
+<h3 class="heading">Are you sure you want to delete <?php echo $row['hw_name']; ?>?</h3>
 
 <form id="mainForm" action="hwDelete.php?hw_id=<?php echo $row['hw_id']; ?>" method="POST">
 
