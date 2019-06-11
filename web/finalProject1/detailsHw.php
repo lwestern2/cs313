@@ -11,7 +11,7 @@ $db = getDb();
     <link rel="stylesheet" href="style.css">
 </head>
 
-<h3 class="heading">Homework Details</h3>
+<h3 class="heading">Homework Details for <?php echo $row['hw_name']; ?></h3>
 
 <?php
 
