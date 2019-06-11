@@ -9,7 +9,6 @@
     <meta charset="utf-8">
 
     <link rel="stylesheet" href="style.css">
-    <div id="calendar"></div>
     <script src="functions.js"></script>
 </head>
 

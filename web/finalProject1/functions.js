@@ -1,4 +1,4 @@
-$(document).ready(function () {
+function Calendar() {
     var currentDate = new Date();
 
     function generateCalendar(d) {
@@ -104,4 +104,4 @@ $(document).ready(function () {
         }
     });
     generateCalendar(currentDate);
-});
+};
