@@ -139,6 +139,10 @@ a.add-btn:hover {
     font-size: 30px;
   }
 
+  #to-do {
+      margin-top: 10px;
+  }
+
 /* collapsible */
 /* .collapsible {
     background-color: #1abc9c;
