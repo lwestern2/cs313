@@ -28,8 +28,8 @@ $db = getDb();
 
             echo "<p><strong>$class: $name</strong></p>";
             echo "<p>Due: $due</p>";
-            echo '<button class="details" href="detailsHw.php?hw_id=' . $row['hw_id'];
-            echo '">View Details</button>';
+            echo '<a class="details-btn" href="detailsHw.php?hw_id=' . $row['hw_id'];
+            echo '">View Details</a>';
         }
 
         ?>
