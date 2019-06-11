@@ -103,5 +103,5 @@ function calendar() {
             generateCalendar(currentDate);
         }
     });
-}
     calendar(currentDate);
+}
