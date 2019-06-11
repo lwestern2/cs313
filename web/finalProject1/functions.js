@@ -1,2 +1,2 @@
-$('#calendar').fullCalendar({
+document.getElementById('#calendar').fullCalendar({
 });
