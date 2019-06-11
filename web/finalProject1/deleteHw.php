@@ -19,7 +19,6 @@ $stmt->bindValue(':hw_id', $_GET['hw_id'], PDO::PARAM_INT);
 $stmt->execute();
 
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
-
 ?>
 
 <h3 class="heading">Are you sure you want to delete <?php echo $row['hw_name']; ?>?</h3>

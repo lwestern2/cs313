@@ -7,11 +7,12 @@ $db = getDb();
 <html>
 <head>
 	<title>Add New Homework</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 <div>
-<h1>Enter A New Homework Assignment</h1>
+<h3 class="heading">Enter A New Homework Assignment</h3>
 
 <?php 
     $month = date('m');
@@ -42,7 +43,7 @@ $db = getDb();
     <input type="date" value="<?php echo $today; ?>" id="date_add" name="date_add">
 	<br /><br />
 
-	<input type="submit" value="Add Homework Assignment">
+	<input class="btn" type="submit" value="Add Homework Assignment">
 </form>
 
 </div>
