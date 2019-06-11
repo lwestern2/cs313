@@ -1,6 +1,6 @@
 <?php
-require("dbConnection.php");
-$db = getDb();
+// require("dbConnection.php");
+// $db = getDb();
 
 // session_start();
 // if (isset($_SESSION['username']))
