@@ -19,7 +19,7 @@ $stmt->execute();
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
 ?>
 
-<h3>List Details for <?php echo $row['list']; ?></h3>
+<h3 class="heading">List Details for <?php echo $row['list']; ?></h3>
 
 <?php
 

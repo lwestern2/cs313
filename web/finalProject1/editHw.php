@@ -11,7 +11,6 @@ $db = getDb();
 
 <body>
 <div>
-<h1>Edit Homework Details</h1>
 
 <?php
 $stmt = $db->prepare('SELECT hw_id, date_add, hw_name, hw_text, class_code, due_date FROM hw WHERE hw_id = :hw_id');
@@ -21,6 +20,8 @@ $stmt->execute();
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 ?>
+
+<h3 class="heading">Edit <?php echo $row['hw_name']; ?> Details</h3>
 
 <form id="mainForm" action="hwUpdate.php?hw_id=<?php echo $row['hw_id']; ?>" method="POST">
     <label for="class_code">Class:</label>
@@ -43,8 +44,8 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
     <input type="date" value="<?php echo $row['date_add']; ?>" id="date_add" name="date_add">
 	<br /><br />
 
-	<input type="submit" name="save" value="Save">
-	<input type="button" name="cancel" value="Cancel" onClick="history.back();">
+	<input class="btn" type="submit" name="save" value="Save">
+	<input class="btn-cancel" type="button" name="cancel" value="Cancel" onClick="history.back();">
 </form>
 
 </div>
