@@ -41,7 +41,6 @@ $db = getDb();
         </div>
         <br>
         <a class="add-btn" href="addHw.php">Add Homework</a>
-        <br>
 
         <div id="to-do">
         <button class="collapsible">To Do List</button>

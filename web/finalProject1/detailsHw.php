@@ -8,9 +8,10 @@ $db = getDb();
 
 <head>
     <title>Homework Details</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<h3>Homework Details</h3>
+<h3 class="heading">Homework Details</h3>
 
 <?php
 
@@ -25,15 +26,15 @@ $db = getDb();
         echo '<p style="color: red;"><strong>Due: '. $row['due_date'] . '</strong></p>';
         echo '<p>Date Added: ' . $row['date_add'] . '</p>';
 
-        echo '<a href="editHw.php?hw_id=' . $row['hw_id'];
+        echo '<a class="btn" href="editHw.php?hw_id=' . $row['hw_id'];
         echo '">Edit</a>';
 
-        echo '<a href="deleteHw.php?hw_id=' . $row['hw_id'];
+        echo '<a class="btn" href="deleteHw.php?hw_id=' . $row['hw_id'];
         echo '">Delete</a>';
     
 ?>
 <br>
-<a href="listView.php">View All</a>
+<a class="btn" href="listView.php">View All</a>
 
 </body>
 
