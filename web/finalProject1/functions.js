@@ -1,3 +1,4 @@
+function calendar() {
     function generateCalendar(d) {
         var currentDate = new Date();
 
@@ -102,4 +103,5 @@
             generateCalendar(currentDate);
         }
     });
-    generateCalendar(currentDate);
+}
+    calendar(currentDate);
