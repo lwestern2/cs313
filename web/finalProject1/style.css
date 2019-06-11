@@ -110,3 +110,7 @@ a.details-btn:hover {
     text-decoration: none;
     color: black;
 }
+
+.hw-con {
+    display: flex;
+}
