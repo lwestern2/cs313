@@ -103,9 +103,9 @@ a.details-btn {
 }
 
 a.details-btn:hover {
-    background-color: white;
+    background-color: #1abc9c;
     padding: 5px;
-    border: #1adc9c solid 2px;
+    border: black solid 3px;
     cursor: pointer;
     text-decoration: none;
     color: black;
