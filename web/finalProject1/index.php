@@ -12,6 +12,7 @@
     <script src="functions.js"></script>
 </head>
 
+<body class="main">
 <div class="month">
     <ul>
         <li class="prev">&#10094;</li>
