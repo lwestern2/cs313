@@ -13,8 +13,8 @@ $db = getDb();
 </head>
 
 <body>
-    <div class="dropdown">
-    <button onclick="dropdown()" class="dropbtn">Dropdown</button>
+    <div class="">
+    <button class="collapsible">Homework</button>
 
         <?php
         $statement = $db->query('SELECT hw_id, date_add, hw_name, hw_text, class_code, due_date FROM hw ORDER BY due_date ASC');

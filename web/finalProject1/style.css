@@ -113,32 +113,25 @@ a.details-btn:hover {
     color: black;
 }
 
-/* dropdown */
-.dropbtn {
+/* collapsible */
+.collapsible {
     background-color: #1abc9c;
     color: black;
-    padding: 5px;
-    font-size: 20px;
-    border: none;
     cursor: pointer;
-}
-
-.dropbtn:hover,
-.dropbtn:focus {
-    background-color: #128870;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
+    padding: 5px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #14947a;
+  }
+  
+  .content {
+    padding: 0;
     display: none;
-    position: absolute;
-    z-index: 1;
-}
-
-.show {
-    display: block;
-}
+    overflow: hidden;
+  }
