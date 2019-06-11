@@ -15,6 +15,7 @@
 <body class="main">
 <h1>Homework & To-Do List Calendar</h1>
 
+<div class="body">
 <div class="events">
 <p>using to test</p>
 
@@ -73,6 +74,7 @@
     <li>29</li>
     <li>30</li>
 </ul>
+</div>
 </div>
 
 </body>
