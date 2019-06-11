@@ -99,12 +99,14 @@ a.details-btn {
     border: none;
     cursor: pointer;
     text-decoration: none;
+    color: black;
 }
 
 a.details-btn:hover {
-    background-color: #1abc9c;
+    background-color: white;
     padding: 5px;
-    border: blue solid 2px;
+    border: #1adc9c solid 2px;
     cursor: pointer;
     text-decoration: none;
+    color: black;
 }
