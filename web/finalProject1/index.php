@@ -17,7 +17,9 @@
 
 <div class="body">
 <div class="events">
-<p>using to test</p>
+<?php
+include listView.php;
+?>
 
 </div>
 <div class="calendar">
