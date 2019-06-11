@@ -10,6 +10,10 @@ body {
     font-family: Verdana, sans-serif;
 }
 
+h1 {
+    text-align: center;
+}
+
 .body {
     display: flex;
     flex-direction: row-reverse;
@@ -17,12 +21,11 @@ body {
 
 .calendar {
     max-width: 50vw;
-    padding-top: 10px;
+    padding: 0 5px 0 10px;
 }
 
 .events {
-    max-width: 50vw;
-    padding-top: 10px;
+    width: 50vw;
 }
 
 .month {
