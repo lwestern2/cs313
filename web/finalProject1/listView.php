@@ -41,9 +41,10 @@ $db = getDb();
         </div>
         <br>
         <a class="add-btn" href="addHw.php">Add Homework</a>
-
+        <br>
+        
         <div>
-        <button class="collapsible">To-Do</button>
+        <button class="collapsible">To Do List</button>
 
         <?php
         $statement = $db->query('SELECT list_id, list, list_text, date_done, date_add FROM to_do ORDER BY date_done ASC');
