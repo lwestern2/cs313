@@ -113,8 +113,20 @@ a.details-btn:hover {
     color: black;
 }
 
-/* collapsible */
 .collapsible {
+    background-color: #1abc9c;
+    color: black;
+    cursor: pointer;
+    padding: 5px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 30px;
+  }
+
+/* collapsible */
+/* .collapsible {
     background-color: #1abc9c;
     color: black;
     cursor: pointer;
@@ -134,4 +146,4 @@ a.details-btn:hover {
     padding: 0;
     display: none;
     overflow: hidden;
-  }
+  } */

@@ -13,7 +13,7 @@ $db = getDb();
 </head>
 
 <body>
-    <button class="">Homework</button>
+    <button class="collapsible">Homework</button>
     <div class="content">
 
         <?php
