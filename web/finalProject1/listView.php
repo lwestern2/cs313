@@ -13,8 +13,8 @@ $db = getDb();
 </head>
 
 <body>
-    <div class="">
     <button class="collapsible">Homework</button>
+    <div class="content">
 
         <?php
         $statement = $db->query('SELECT hw_id, date_add, hw_name, hw_text, class_code, due_date FROM hw ORDER BY due_date ASC');
@@ -38,9 +38,9 @@ $db = getDb();
         }
 
         ?>
+        </div>
         <br>
         <a class="add-btn" href="addHw.php">Add Homework</a>
-        </div>
 
         <div>
         <h2>To do</h2>
