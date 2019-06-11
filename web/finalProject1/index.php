@@ -9,14 +9,9 @@ include 'functions.php';
     <title>Homework Calendar</title>
     <meta charset="utf-8">
 
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-</head>
-
-<body>
-    <div id="calendar_div">
-        <?php echo getCalender(); ?>
-    </div>
-</body>
+    <link rel="stylesheet" href="style.css">
+    <div id="calendar"></div>
+    <script src="functions.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
 
 </html>
