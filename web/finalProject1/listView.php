@@ -12,7 +12,6 @@ $db = getDb();
 
 <body>
     <div>
-        <h1>Calendar Resources</h1>
         <h2>Homework</h2>
 
         <?php
@@ -29,8 +28,8 @@ $db = getDb();
 
             echo "<p><strong>$class: $name</strong></p>";
             echo "<p>Due: $due</p>";
-            echo '<a href="detailsHw.php?hw_id=' . $row['hw_id'];
-            echo '">View More</a>';
+            echo '<button class="details" href="detailsHw.php?hw_id=' . $row['hw_id'];
+            echo '">View Details</a>';
         }
 
         ?>
