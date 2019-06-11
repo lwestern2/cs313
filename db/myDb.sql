@@ -30,8 +30,7 @@ CREATE TABLE calendar (
 	user_id		SERIAL NOT NULL REFERENCES hw_user(user_id)
 );
 
-INSERT INTO hw_user (username, password) VALUES ('username', 'password123');
-INSERT INTO hw_user (username, password) VALUES ('testUser', 'password123');
+INSERT INTO hw_user (username, password) VALUES ('testUser', 'qwerty1');
 INSERT INTO hw (date_add, hw_name, hw_text, class_code, due_date) VALUES ('2019-05-18', 'Database Setup', 'Assignment instructions', 'CIT 313', '2019-05-21');
 INSERT INTO hw (date_add, hw_name, hw_text, class_code, due_date) VALUES ('2019-05-25', 'Persuasive Essay', 'Assignment instructions', 'CIT 230', '2019-05-28');
 INSERT INTO hw (date_add, hw_name, hw_text, class_code, due_date) VALUES ('2019-05-30', 'Project 1', 'Assignment instructions', 'CIT 366', '2019-06-03');
