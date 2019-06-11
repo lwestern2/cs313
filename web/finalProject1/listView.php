@@ -9,7 +9,7 @@ $db = getDb();
 <head>
     <title>Homework Calendar</title>
     <link rel="stylesheet" href="style.css">
-    <script src="functions.js">
+    <script src="functions.js"></script>
 </head>
 
 <body>
