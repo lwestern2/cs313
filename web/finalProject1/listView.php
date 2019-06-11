@@ -16,7 +16,7 @@ $db = getDb();
         <h2>Homework</h2>
 
         <?php
-        $statement = $db->query('SELECT hw_id, date_add, hw_name, hw_text, class_code, due_date FROM hw');
+        $statement = $db->query('SELECT hw_id, date_add, hw_name, hw_text, class_code, due_date FROM hw ORDER BY due_date ASC');
         $statement->execute();
 
         while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
@@ -29,7 +29,7 @@ $db = getDb();
 
             echo "<div class='hw-con'>";
             echo '<a class="details-btn" href="detailsHw.php?hw_id=' . $row['hw_id'];
-            echo '">View Details</a>';
+            echo '">View Details...</a>';
             echo "<p><strong>$class: $name</strong></p>";
             echo "<p>Due: $due</p>";
             echo "</div>";
@@ -38,7 +38,7 @@ $db = getDb();
 
         ?>
         <br>
-        <a href="addHw.php">Add Homework</a>
+        <a class="add-btn" href="addHw.php">Add Homework</a>
         </div>
 
         <div>
