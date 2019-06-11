@@ -142,10 +142,10 @@ a.add-btn:hover {
     background-color: #1abc9c;
     color: black;
     padding: 5px;
-    width: 50%;
     border: none;
     text-align: center;
     outline: none;
+    margin: 0;
   }
 
   #to-do {
