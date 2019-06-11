@@ -36,6 +36,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
     
 ?>
 <br>
+<br>
 <a class="btn" href="listView.php">View All</a>
 
 </body>
