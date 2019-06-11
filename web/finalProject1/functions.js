@@ -5,9 +5,8 @@
     function Calendar(selector, events) {
       this.el = document.querySelector(selector);
       this.events = events;
-      var dateFormat = require('dateformat');
-      this.current = new Date();
-      dateFormat(now, "MMMM YYYY");
+      var today = new Date();
+      this.current = today.getMonth() + today.getFullYear();
       this.draw();
       var current = document.querySelector('.today');
       if(current) {
