@@ -190,7 +190,7 @@ a.add-btn:hover {
     margin: 5px 5px 0 0;
   }
 
-  .btn-cancel {
+  .btn-cancel:hover {
     background-color: rgb(141, 141, 141);
   }
 
@@ -200,7 +200,7 @@ a.add-btn:hover {
       font-family: Verdana, sans-serif;
   }
 
-  input {
+  .form {
       font-size: 15px;
   }
 
