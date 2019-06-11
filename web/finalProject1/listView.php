@@ -8,6 +8,7 @@ $db = getDb();
 
 <head>
     <title>Homework Calendar</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
