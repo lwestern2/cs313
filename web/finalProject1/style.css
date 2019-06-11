@@ -123,7 +123,7 @@ a.add-btn {
     font-size: 20px;
 }
 
-a.add-btn {
+a.add-btn:hover {
     background-color: #14947a;
 }
 
