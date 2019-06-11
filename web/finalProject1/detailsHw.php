@@ -27,6 +27,9 @@ $db = getDb();
 
         echo '<a href="editHw.php?hw_id=' . $row['hw_id'];
         echo '">Edit</a>';
+
+        echo '<a href="deleteHw.php?hw_id=' . $row['hw_id'];
+        echo '">Delete</a>';
     
 ?>
 <br>
