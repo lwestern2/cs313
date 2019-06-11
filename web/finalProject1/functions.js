@@ -1,11 +1,11 @@
 !function() {
 
-    var today = moment();
+    var today = new Date();
   
     function Calendar(selector, events) {
       this.el = document.querySelector(selector);
       this.events = events;
-      this.current = moment().date(1);
+      this.current = new Date().date(1);
       this.draw();
       var current = document.querySelector('.today');
       if(current) {
