@@ -30,7 +30,7 @@ $db = getDb();
 
             echo "<div class='content'>";
             echo '<a class="details-btn" href="detailsHw.php?hw_id=' . $row['hw_id'];
-            echo '">View Details...</a>';
+            echo '">View Details</a>';
             echo "<p><strong>$class: $name</strong></p>";
             echo "<p>Due: $due</p>";
             echo "<hr>";
@@ -58,7 +58,7 @@ $db = getDb();
 
             echo "<div class='content'>";
             echo '<a class="details-btn" href="detailsList.php?list_id=' . $row['list_id'];
-            echo '">View More</a>';
+            echo '">View Details</a>';
             echo "<p><strong>$name</strong></p>";
             echo "<p>Do by: $done</p>";
             echo "<hr>";
