@@ -43,4 +43,26 @@
 
 // countFun(logCount);
 
+//Filter LS
+// let fs = require('fs');
+// let path = require('path');
 
+// fs.readdir(process.argv[2], 
+//     (err, data) => {
+//         data.forEach(function (filename) {
+//             if(path.extname(filename) === '.' + process.argv[3]) {
+//                 console.log(filename);
+//             }
+//         })
+//     })
+
+//Make it module
+const filterDir = require('./filter');
+
+filterDir(process.argv[2], process.argv[3], 
+    (err, files) => {
+
+        files.forEach((file) => {
+            console.log(file);
+        });
+});
